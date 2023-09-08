@@ -1,18 +1,19 @@
 import { component$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 
-import Hero from "~/components/UI/hero";
+/*import Counter from "~/components/starter/counter/counter";*/
 
 export default component$(() => {
   return (
     <>
-      <Hero/>
+
+    
     </>
   );
 });
 
 export const head: DocumentHead = {
-  title: "Brady Underwood | Freelance Web Developer",
+  title: "Brady Underwood | About Me",
   meta: [
     {
       name: "this is a description",
