@@ -9,12 +9,12 @@ import Mountains from "~/components/animations/mountains";
 export default component$(() => {
   return (
     <>
-      <Hero/>
-      <div class="absolute top-1/2 w-full">
-      <Mountains/>
+      <div class="absolute -bottom-2 w-[calc(100%+8rem)] -left-[4rem]">
+          <Mountains />
       </div>
-      <ProjectList/>
-      <ContactForm/>
+      <Hero />
+      <ProjectList />
+      <ContactForm />
     </>
   );
 });

@@ -1,5 +1,5 @@
 import { component$ } from "@builder.io/qwik";
-import NameDraft from "../../../media/logotemp.png";
+import NameDraft from "../../../media/logotemp.svg";
 import { Link } from '@builder.io/qwik-city';
 
 
@@ -18,7 +18,7 @@ export default component$(() => {
           <li>
             <Link
               href="/software"
-              class="text-white"
+              class="text-white hover:text-neutral-300 transition-colors duration-100"
             >
               software
             </Link>
@@ -26,7 +26,7 @@ export default component$(() => {
           <li>
             <Link
               href="/design"
-              class="text-white"
+              class="text-white hover:text-neutral-300 transition-colors duration-100"
             >
               design
             </Link>
@@ -34,7 +34,7 @@ export default component$(() => {
           <li>
             <Link
               href="/about"
-              class="text-white"
+              class="text-white hover:text-neutral-300 transition-colors duration-100"
             >
               about
             </Link>

@@ -14,7 +14,7 @@ export default component$(() => {
                 <h3 class="text-xl mb-8 text-neutral-200">I am a freelance software developer and web designer optimizing for <span>simplicity</span> and <span>performance</span></h3>
                 <div class="w-28 h-[2px] bg-white/20 rounded-full mb-5"></div>
                 <div class="flex space-x-6 items-center">
-                    <img src={instagram} width={24}/>
+                    <img src={instagram} width={24} class="hover:cursor-pointer"/>
                     <img src={linkedin} width={24}/>
                     <img src={github} width={24}/>
                     <img src={youtube} width={24}/>
