@@ -7,7 +7,7 @@ export default component$(() => {
 
   return (
     <footer>
-      <div class="container">
+      <div class="container bg-neutral-800 h-48 flex items-center justify-center">
         <a href="https://www.builder.io/" target="_blank" class={styles.anchor}>
           <span>Made with ♡ by Builder.io</span>
           <span class={styles.spacer}>|</span>
