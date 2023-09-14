@@ -6,10 +6,10 @@ import { Link } from '@builder.io/qwik-city';
 
 export default component$(() => {
   return (
-    <header class="flex w-full max-w-5xl mx-auto justify-between items-center my-5 text-sm">
+    <header class="flex w-full max-w-5xl mx-auto justify-between items-center my-5 text-md">
       <div class="">
         <Link href="/" title="Brady">
-          <img src={NameDraft} width={110} height={50} />
+          <img src={NameDraft} width={120} height={50} />
 
         </Link>
       </div>
@@ -40,7 +40,7 @@ export default component$(() => {
             </Link>
           </li>
         </ul>
-        <button class="bg-white rounded-sm text-black py-2 px-4 font-semibold">
+        <button class="bg-white rounded-sm text-black py-3 px-4 font-semibold">
           download CV
         </button>
       </nav>

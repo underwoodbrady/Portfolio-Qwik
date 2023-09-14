@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500;700;800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <canvas id="ctx" WIDTH="500" HEIGHT="500"></canvas>
+    <script>
+        let canvas = document.getElementById('ctx'),
+            ctx = canvas.getContext("2d"),
+            width,
+            height;
+
+
+        function resizeCanvas() {
+            width = window.innerWidth;
+            height = window.innerHeight;
+            canvas.width = width;
+            canvas.height = height;
+        }
+
+        resizeCanvas();
+
+        let smoke = [];
+
+        function Smoke(x,y) {
+            this.x = x + Math.random()*25;
+            this.y = y + Math.random()*25;
+            this.xs = (Math.random() - 0.5) * 5;
+            this.ys = ((Math.random()*4) +3.5);
+            this.shade = `${((Math.random()+2)*20)}`;
+            this.size = (100/(this.ys));
+            this.toRemove = false;
+            this.lifetime = 0;
+        }
+
+        Smoke.prototype.update = function() {
+            this.x += this.xs/2;
+            this.y -= this.ys/2;
+            this.lifetime += 1;
+        }
+
+        Smoke.prototype.draw = function() {
+            ctx.translate(this.x, this.y);
+            ctx.fillStyle = `rgb(${this.shade },${this.shade },${this.shade })`;
+            ctx.beginPath();
+            ctx.ellipse(-this.size/2, -this.size/2, this.size, this.size,0,0,2*Math.PI)
+            ctx.fill();
+            ctx.restore();
+        }
+        
+
+        canvas.addEventListener('click', (e)=>{
+            requestAnimationFrame(update);
+
+        }, false);
+
+        let mouseX, mouseY;
+        canvas.onmousemove = (e) => {
+            mouseX = e.clientX;
+            mouseY = e.clientY;
+            let newSmoke = new Smoke((mouseX),mouseY);
+            smoke.push(newSmoke);
+        }
+
+
+       
+        ctx.font = "bold 24px serif";
+
+        function animateSmoke() {
+            for (let i = 0; i < smoke.length; i++) {
+                ctx.save();
+                if (!smoke[i].toRemove) {
+                    smoke[i].update();
+                    smoke[i].draw();
+                }
+            }
+        }
+
+        function update() {
+            setTimeout(function() {
+                ctx.fillStyle = 'rgb(24,24,24)';
+                ctx.fillRect(0, 0, width, height);
+                ctx.fillStyle = "white";
+                ctx.fillText(`${mouseX}, ${mouseY}`,width-120,height-24)
+                animateSmoke();
+                requestAnimationFrame(update);
+            }, 1000 / 60)
+        }
+
+    </script>
+</body>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: 'Dosis', sans-serif;
+    }
+
+    body {
+        background-color: #1c1c1c;
+        color: whitesmoke;
+        overflow: hidden;
+    }
+
+</style>
+
+
+
+</html>
