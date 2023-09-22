@@ -9,6 +9,7 @@
 
 <body>
     <canvas id="ctx" WIDTH="500" HEIGHT="500"></canvas>
+    <!--<img src="./fire.svg" width="200" height="200" style="position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:200px;height:200px;"/>-->
     <script>
         let canvas = document.getElementById('ctx'),
             ctx = canvas.getContext("2d"),
@@ -27,67 +28,95 @@
 
         let smoke = [];
 
-        function Smoke(x,y) {
-            this.x = x + Math.random()*25;
-            this.y = y + Math.random()*25;
-            this.xs = (Math.random() - 0.5) * 5;
-            this.ys = ((Math.random()*4) +3.5);
-            this.shade = `${((Math.random()+2)*20)}`;
-            this.size = (100/(this.ys));
+        function Smoke(x, y) {
+            this.x = x + Math.random() * 25;
+            this.y = y + Math.random() * 25;
+            this.xs = (Math.random() - 0.5) * 2.5;
+            this.ys = ((Math.random() * 2) + 2.5);
+            this.shade = `${((Math.random() + 2) * 20)}`;
+            this.r = this.shade;
+            this.g = this.shade;
+            this.b = this.shade;
+            this.size = (50 / (this.ys));
             this.toRemove = false;
             this.lifetime = 0;
         }
 
-        Smoke.prototype.update = function() {
-            this.x += this.xs/2;
-            this.y -= this.ys/2;
+        Smoke.prototype.update = function () {
+            this.x += this.xs / 2;
+            this.y -= this.ys / 2;
             this.lifetime += 1;
+            let halfsize = this.size;
+            if (this.x - halfsize > width || this.x + halfsize < 0 || this.y - halfsize > height || this.y + halfsize < 0) {
+                this.toRemove = true;
+            }
         }
 
-        Smoke.prototype.draw = function() {
-            ctx.translate(this.x, this.y);
-            ctx.fillStyle = `rgb(${this.shade },${this.shade },${this.shade })`;
+        Smoke.prototype.draw = function () {
+            ctx.fillStyle = `rgb(${this.r},${this.g},${this.b})`;
             ctx.beginPath();
-            ctx.ellipse(-this.size/2, -this.size/2, this.size, this.size,0,0,2*Math.PI)
+            ctx.ellipse(this.x, this.y, this.size, this.size, 0, 0, 2 * Math.PI)
             ctx.fill();
-            ctx.restore();
         }
-        
 
-        canvas.addEventListener('click', (e)=>{
+
+        canvas.addEventListener('click', (e) => {
             requestAnimationFrame(update);
 
         }, false);
 
         let mouseX, mouseY;
-        canvas.onmousemove = (e) => {
+
+        const Img = {};
+        Img.cash = new Image();
+        Img.cash.src = 'campfire.png';
+        /*canvas.onmousemove = (e) => {
             mouseX = e.clientX;
             mouseY = e.clientY;
-            let newSmoke = new Smoke((mouseX),mouseY);
+            let newSmoke = new Smoke((mouseX), mouseY);
             smoke.push(newSmoke);
         }
+        */
 
 
-       
         ctx.font = "bold 24px serif";
 
         function animateSmoke() {
             for (let i = 0; i < smoke.length; i++) {
-                ctx.save();
-                if (!smoke[i].toRemove) {
-                    smoke[i].update();
-                    smoke[i].draw();
-                }
+                smoke[i].update();
+                smoke[i].draw();
             }
         }
 
+        function removeOutliers(){
+            smoke = smoke.filter((val,i)=>!val.toRemove);
+        }
+        let loopIteration = 0;
+        let spawnLimiter = 4; // Higher number is slower speed
+
         function update() {
-            setTimeout(function() {
+            setTimeout(function () {
+                if (loopIteration == 0) {
+                    let newSmoke = new Smoke((width / 2), height / 2);
+                    smoke.push(newSmoke);
+                }
+                loopIteration++;
+                if(loopIteration>spawnLimiter) loopIteration = 0;
+
+                //UI
                 ctx.fillStyle = 'rgb(24,24,24)';
                 ctx.fillRect(0, 0, width, height);
                 ctx.fillStyle = "white";
-                ctx.fillText(`${mouseX}, ${mouseY}`,width-120,height-24)
+                //ctx.fillText(`${mouseX}, ${mouseY}`, width - 120, height - 24)
+                ctx.fillText(`${smoke.length}`, width - 120, height - 48)
+                ctx.save();
+                ctx.translate(width/2+15, height/2+80);
+                ctx.drawImage(Img.cash, 0, 0, Img.cash.width, Img.cash.height,
+                -(Img.cash.width * 0.25) / 2, -(Img.cash.height * 0.25) / 2, Img.cash.width * 0.25, Img.cash.height * 0.25);
+                ctx.restore();
+                //Smoke Animation
                 animateSmoke();
+                removeOutliers();
                 requestAnimationFrame(update);
             }, 1000 / 60)
         }
@@ -107,7 +136,6 @@
         color: whitesmoke;
         overflow: hidden;
     }
-
 </style>
 
 
