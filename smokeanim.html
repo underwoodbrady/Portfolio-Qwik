@@ -24,6 +24,10 @@
             canvas.height = height;
         }
 
+        let backgroundr = 24;
+        let backgroundg = 24;
+        let backgroundb = 24;
+
         resizeCanvas();
 
         let smoke = [];
@@ -31,15 +35,17 @@
         function Smoke(x, y) {
             this.x = x + Math.random() * 25;
             this.y = y + Math.random() * 25;
-            this.xs = (Math.random() - 0.5) * 2.5;
-            this.ys = ((Math.random() * 2) + 2.5);
+            this.xs = (Math.random() - 0.5) * 1.5;
+            this.ys = ((Math.random() * 1.5) + 2);
             this.shade = `${((Math.random() + 2) * 20)}`;
             this.r = this.shade;
             this.g = this.shade;
             this.b = this.shade;
-            this.size = (50 / (this.ys));
+            this.size = (40 / (this.ys));
             this.toRemove = false;
             this.lifetime = 0;
+            this.maxLifetime = 300; //300/60fps = 5 seconds
+            this.fadevalue = (Math.abs(this.shade-backgroundb))/(this.maxLifetime/2);
         }
 
         Smoke.prototype.update = function () {
@@ -47,9 +53,18 @@
             this.y -= this.ys / 2;
             this.lifetime += 1;
             let halfsize = this.size;
-            if (this.x - halfsize > width || this.x + halfsize < 0 || this.y - halfsize > height || this.y + halfsize < 0) {
+            if (this.x - halfsize > width || this.x + halfsize < 0 || this.y - halfsize > height || this.y + halfsize < 0 || this.lifetime>this.maxLifetime) {
                 this.toRemove = true;
             }
+            if(this.lifetime>this.maxLifetime/2){
+                this.fade();
+            }
+        }
+
+        Smoke.prototype.fade = function (){
+            this.r = this.r-(this.fadevalue);
+            this.g = this.g-(this.fadevalue);
+            this.b = this.b-(this.fadevalue);
         }
 
         Smoke.prototype.draw = function () {
@@ -79,7 +94,7 @@
         */
 
 
-        ctx.font = "bold 24px serif";
+        ctx.font = "bold 12px serif";
 
         function animateSmoke() {
             for (let i = 0; i < smoke.length; i++) {
@@ -97,23 +112,23 @@
         function update() {
             setTimeout(function () {
                 if (loopIteration == 0) {
-                    let newSmoke = new Smoke((width / 2), height / 2);
+                    let newSmoke = new Smoke((width / 2), height-50);
                     smoke.push(newSmoke);
                 }
                 loopIteration++;
                 if(loopIteration>spawnLimiter) loopIteration = 0;
 
                 //UI
-                ctx.fillStyle = 'rgb(24,24,24)';
+                ctx.fillStyle = `rgb(${backgroundr},${backgroundg},${backgroundb})`;
                 ctx.fillRect(0, 0, width, height);
                 ctx.fillStyle = "white";
                 //ctx.fillText(`${mouseX}, ${mouseY}`, width - 120, height - 24)
                 ctx.fillText(`${smoke.length}`, width - 120, height - 48)
-                ctx.save();
+                /*ctx.save();
                 ctx.translate(width/2+15, height/2+80);
                 ctx.drawImage(Img.cash, 0, 0, Img.cash.width, Img.cash.height,
                 -(Img.cash.width * 0.25) / 2, -(Img.cash.height * 0.25) / 2, Img.cash.width * 0.25, Img.cash.height * 0.25);
-                ctx.restore();
+                ctx.restore();*/
                 //Smoke Animation
                 animateSmoke();
                 removeOutliers();
