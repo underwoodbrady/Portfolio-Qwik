@@ -35,25 +35,27 @@
         function Smoke(x, y) {
             this.x = x + Math.random() * 25;
             this.y = y + Math.random() * 25;
-            this.xs = (Math.random() - 0.5) * 1.5;
-            this.ys = ((Math.random() * 1.5) + 2);
+            this.xs = (Math.random() - 0.5);
+            this.ys = ((Math.random()) + 1.25);
             this.shade = `${((Math.random() + 2) * 20)}`;
             this.r = this.shade;
             this.g = this.shade;
             this.b = this.shade;
-            this.size = (40 / (this.ys));
+            this.size = (28 / (this.ys));
             this.toRemove = false;
             this.lifetime = 0;
-            this.maxLifetime = 300; //300/60fps = 5 seconds
+            this.maxLifetime = 240; //300/60fps = 5 seconds
             this.fadevalue = (Math.abs(this.shade-backgroundb))/(this.maxLifetime/2);
         }
 
         Smoke.prototype.update = function () {
-            this.x += this.xs / 2;
-            this.y -= this.ys / 2;
+            this.x += this.xs;
+            this.y -= this.ys;
+            this.x += windIntensity;
+
             this.lifetime += 1;
-            let halfsize = this.size;
-            if (this.x - halfsize > width || this.x + halfsize < 0 || this.y - halfsize > height || this.y + halfsize < 0 || this.lifetime>this.maxLifetime) {
+
+            if (this.lifetime>this.maxLifetime) {
                 this.toRemove = true;
             }
             if(this.lifetime>this.maxLifetime/2){
@@ -74,25 +76,7 @@
             ctx.fill();
         }
 
-
-        canvas.addEventListener('click', (e) => {
-            requestAnimationFrame(update);
-
-        }, false);
-
-        let mouseX, mouseY;
-
-        const Img = {};
-        Img.cash = new Image();
-        Img.cash.src = 'campfire.png';
-        /*canvas.onmousemove = (e) => {
-            mouseX = e.clientX;
-            mouseY = e.clientY;
-            let newSmoke = new Smoke((mouseX), mouseY);
-            smoke.push(newSmoke);
-        }
-        */
-
+        requestAnimationFrame(update);
 
         ctx.font = "bold 12px serif";
 
@@ -106,30 +90,38 @@
         function removeOutliers(){
             smoke = smoke.filter((val,i)=>!val.toRemove);
         }
+
         let loopIteration = 0;
         let spawnLimiter = 4; // Higher number is slower speed
+        
+        let windIntensity = 0;
+        let newWindIntensity = 0.4;
 
         function update() {
             setTimeout(function () {
+
+                windIntensity += windIntensity > newWindIntensity ? -0.005 : 0.005;
+
+                if(Math.abs(newWindIntensity - windIntensity) < 0.005) newWindIntensity = Math.random()-0.5;
+                
                 if (loopIteration == 0) {
                     let newSmoke = new Smoke((width / 2), height-50);
                     smoke.push(newSmoke);
                 }
+
                 loopIteration++;
+
                 if(loopIteration>spawnLimiter) loopIteration = 0;
 
                 //UI
                 ctx.fillStyle = `rgb(${backgroundr},${backgroundg},${backgroundb})`;
                 ctx.fillRect(0, 0, width, height);
                 ctx.fillStyle = "white";
-                //ctx.fillText(`${mouseX}, ${mouseY}`, width - 120, height - 24)
+
                 ctx.fillText(`${smoke.length}`, width - 120, height - 48)
-                /*ctx.save();
-                ctx.translate(width/2+15, height/2+80);
-                ctx.drawImage(Img.cash, 0, 0, Img.cash.width, Img.cash.height,
-                -(Img.cash.width * 0.25) / 2, -(Img.cash.height * 0.25) / 2, Img.cash.width * 0.25, Img.cash.height * 0.25);
-                ctx.restore();*/
-                //Smoke Animation
+                ctx.fillText(`${windIntensity}`, width - 120, height - 28)
+                ctx.fillText(`${newWindIntensity}`, width - 120, height - 8)
+
                 animateSmoke();
                 removeOutliers();
                 requestAnimationFrame(update);

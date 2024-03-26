@@ -6,7 +6,7 @@ import { Link } from '@builder.io/qwik-city';
 
 export default component$(() => {
   return (
-    <header class="flex w-full max-w-5xl mx-auto justify-between items-center my-5 text-md">
+    <header class="relative flex w-full max-w-6xl mx-auto justify-between items-center mt-6 text-md z-30">
       <div class="">
         <Link href="/" title="Brady">
           <img src={NameDraft} width={120} height={50} />

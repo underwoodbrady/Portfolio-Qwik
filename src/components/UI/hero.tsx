@@ -8,7 +8,7 @@ import youtube from "../../media/youtube.svg";
 
 export default component$(() => {
     return (
-        <section class="relative text-white max-w-5xl mx-auto flex h-[calc(100vh-72px)]">
+        <section class="relative text-white max-w-6xl mx-auto flex h-[calc(100vh-72px)]">
             <div class="absolute w-1/2 top-[35%] -translate-y-1/2">
                 <h2 class="mb-8 text-5xl font-semibold text-neutral-100">Hello,</h2>
                 <h3 class="text-xl mb-8 text-neutral-200">I am a freelance software developer and web designer optimizing for <span>simplicity</span> and <span>performance</span></h3>

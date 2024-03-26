@@ -4,17 +4,24 @@ import type { DocumentHead } from "@builder.io/qwik-city";
 import Hero from "~/components/UI/hero";
 import ProjectList from "~/components/UI/projectlist";
 import ContactForm from "~/components/UI/contactform";
+import Canvas from "~/components/animations/canvas";
 import Mountains from "~/components/animations/mountains";
+import MountainsBack from "~/components/animations/mountainsback";
+import MountainsFront from "~/components/animations/mountainsfront";
 
 export default component$(() => {
   return (
     <>
+          <div class="absolute -bottom-2 w-[calc(100%+8rem)] -left-[4rem]">
+        <MountainsBack />
+      </div>
+      <Canvas />
       <div class="absolute -bottom-2 w-[calc(100%+8rem)] -left-[4rem]">
-          <Mountains />
+        <MountainsFront />
       </div>
       <Hero />
-      <ProjectList />
-      <ContactForm />
+      {/* <ProjectList />
+      <ContactForm /> */}
     </>
   );
 });
