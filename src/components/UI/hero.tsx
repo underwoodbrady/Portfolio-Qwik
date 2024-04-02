@@ -1,11 +1,5 @@
 import { component$ } from "@builder.io/qwik";
 
-import instagram from "../../media/instagram.svg";
-import github from "../../media/github.svg";
-import linkedin from "../../media/linkedin.svg";
-import youtube from "../../media/youtube.svg";
-
-
 export default component$(() => {
     return (
         <section class="relative text-white max-w-7xl mx-auto flex h-[calc(100vh-72px)]">

@@ -3,10 +3,6 @@ import { routeLoader$ } from "@builder.io/qwik-city";
 import type { RequestHandler } from "@builder.io/qwik-city";
 
 import Header from "~/components/main/header/header";
-import Canvas from "~/components/animations/canvas";
-import Mountains from "~/components/animations/mountains";
-import MountainsBack from "~/components/animations/mountainsback";
-import MountainsFront from "~/components/animations/mountainsfront";
 
 import styles from "./styles.css?inline";
 
