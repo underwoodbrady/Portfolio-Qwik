@@ -1,6 +1,4 @@
-
-
 body {
   background: rgb(24,24,24);
-  overflow: hidden;
+  overflow-x: hidden;
 }

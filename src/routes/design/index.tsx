@@ -1,5 +1,6 @@
 import { component$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
+import Design from "~/components/UI/design";
 
 /*import Counter from "~/components/starter/counter/counter";*/
 
@@ -7,7 +8,7 @@ export default component$(() => {
   return (
     <>
 
-    
+      <Design/>
     </>
   );
 });
