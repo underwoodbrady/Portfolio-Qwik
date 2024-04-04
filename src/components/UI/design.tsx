@@ -1,5 +1,4 @@
 import { component$ } from "@builder.io/qwik";
-import SoftwareProject from "./softwareproject";
 
 export default component$(() => {
     return (

@@ -6,9 +6,6 @@ import Canvas from "~/components/animations/canvas";
 import MountainsBack from "~/components/animations/mountainsback";
 import MountainsFront from "~/components/animations/mountainsfront";
 
-import styles from "./index.module.css";
-
-
 export default component$(() => {
   return (
     <>
