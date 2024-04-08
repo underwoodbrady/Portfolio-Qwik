@@ -40,7 +40,7 @@ export default component$(() => {
             </Link>
           </li>
         </ul>
-        <button class="bg-white rounded-sm text-black py-3 px-4 font-semibold">
+        <button class="bg-white hover:bg-neutral-300 transition-colors duration-100 rounded-sm text-black py-3 px-4 font-semibold">
           download CV
         </button>
       </nav>
