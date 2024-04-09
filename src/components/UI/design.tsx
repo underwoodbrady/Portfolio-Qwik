@@ -10,22 +10,22 @@ export default component$(() => {
             </div>
             <div class={["flex flex-col space-y-6 relative z-20 mt-28 mb-8 w-full", styles.wrapper]}>
                 <div class={styles.one}>
-                    <Designproject title="Urban Wordle" color="#29B2AF" />
+                    <Designproject title="Urban Wordle" colorRed={41} colorGreen={178} colorBlue={175}/>
                 </div>
                 <div class={styles.two}>
-                    <Designproject title="Flutter Snowcounter" color="#29B2AF" />
+                    <Designproject title="Red Trade" colorRed={211} colorGreen={94} colorBlue={94} />
                 </div>
                 <div class={styles.three}>
-                    <Designproject title="Red Trade" color="#29B2AF" />
+                    <Designproject title="Flutter Snowcounter" colorRed={136} colorGreen={183} colorBlue={105} />
                 </div>
                 <div class={styles.four}>
-                    <Designproject title="Simply Brackets" color="#29B2AF" />
+                    <Designproject title="Simply Brackets" colorRed={196} colorGreen={117} colorBlue={38} />
                 </div>
                 <div class={styles.five}>
-                    <Designproject title="Tech Blog" color="#29B2AF" />
+                    <Designproject title="Tech Blog" colorRed={188} colorGreen={172} colorBlue={57} />
                 </div>
                 <div class={styles.six}>
-                    <Designproject title="This Website" color="#29B2AF" />
+                    <Designproject title="This Website" colorRed={48} colorGreen={162} colorBlue={121} />
                 </div>
             </div>
         </section>

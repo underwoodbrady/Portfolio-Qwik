@@ -16,7 +16,7 @@ export default component$<Props>(({ title, role, color }) => {
                 <h4 class=" text-neutral-400">{role}</h4>
             </div>
             <div>
-                <button class="font-semibold border-white px-4 py-3 rounded-sm" style={`color:${color};border-color:${color}`}>learn more</button>
+                <button class="font-semibold border-white px-4 py-3 rounded-sm" style={`color:${color}`}>learn more</button>
             </div>
         </div>
     );
