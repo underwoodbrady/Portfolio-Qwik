@@ -9,7 +9,7 @@ import MountainsFront from "~/components/animations/mountainsfront";
 export default component$(() => {
   return (
     <>
-          <div class="absolute -bottom-2 w-[calc(100%+8rem)] -left-[4rem]">
+      <div class="absolute -bottom-2 w-[calc(100%+8rem)] -left-[4rem]">
         <MountainsBack />
       </div>
       <Canvas />

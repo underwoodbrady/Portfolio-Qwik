@@ -15,6 +15,17 @@ export default component$(() => {
       </div>
       <nav class="flex space-x-16 items-center">
         <ul class="flex justify-around space-x-12">
+          {/* <li class="relative">
+            <Link
+              href="/ai"
+              class="text-white hover:text-neutral-300 transition-colors duration-100"
+            >
+              ai
+            </Link>
+            <div class="absolute -top-2 -right-6">
+              <p class="text-xs text-white font-bold" style={"background: -webkit-linear-gradient(#e86f6f, #D35E5E);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"}>new</p>
+            </div>
+          </li> */}
           <li>
             <Link
               href="/software"
