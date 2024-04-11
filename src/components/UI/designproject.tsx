@@ -2,6 +2,9 @@ import { component$ } from "@builder.io/qwik";
 import ImageWordle from '~/media/urbanwordle4.png?jsx';
 import ImageRed from '~/media/redtrade.png?jsx';
 import ImageSnow from '~/media/snowcounter.png?jsx';
+import ImageBlog from '~/media/blog2.png?jsx';
+import ImageBrackets from '~/media/simplybrackets2.png?jsx';
+import ImageThis from '~/media/thiswebsite.png?jsx';
 
 
 interface Props {
@@ -38,9 +41,31 @@ export default component$<Props>(({ title, colorRed, colorGreen, colorBlue }) =>
                 )
             }
             {
-                (title == 'Flutter Snowcounter' ? 
+                (title == 'Flutter Snowclock' ? 
                 <div class=" max-w-[240px] mx-auto">
                     <ImageSnow />
+                </div> : <></>
+                )
+            }
+            {
+                (title == 'Tech Blog' ? 
+                <div class=" max-w-[300px] mx-auto">
+                    <ImageBlog />
+                </div> : <></>
+                )
+            }
+            {
+                (title == 'Simply Brackets' ? 
+                <div class=" max-w-[240px] mx-auto">
+                    <ImageBrackets />
+                </div> : <></>
+                )
+            }
+
+            {
+                (title == 'This Website' ? 
+                <div class=" max-w-[540px] mx-auto">
+                    <ImageThis />
                 </div> : <></>
                 )
             }

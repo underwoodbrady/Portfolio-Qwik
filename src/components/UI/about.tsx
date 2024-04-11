@@ -10,7 +10,7 @@ export default component$(() => {
             </div>
             <div class="flex-1 flex flex-col items-start h-full justify-between">
                 <div class="flex items-center justify-between mb-8 w-full">
-                    <h2 class="font-semibold text-5xl text-neutral-100">About Me</h2>
+                    <h2 class="font-semibold text-5xl text-neutral-100">about me</h2>
                     <div class="flex space-x-3 mt-2">
                         <div class="w-3 h-3 rounded-full bg-[#CC3535]"/>
                         <div class="w-3 h-3 rounded-full bg-[#01AAAA]"/>

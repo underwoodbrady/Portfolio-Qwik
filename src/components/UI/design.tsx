@@ -17,10 +17,10 @@ export default component$(() => {
                     <Designproject title="Red Trade" colorRed={211} colorGreen={94} colorBlue={94} />
                 </div>
                 <div class={styles.three}>
-                    <Designproject title="Flutter Snowcounter" colorRed={41} colorGreen={178} colorBlue={175} />
+                    <Designproject title="Simply Brackets" colorRed={41} colorGreen={178} colorBlue={175} />
                 </div>
                 <div class={styles.four}>
-                    <Designproject title="Simply Brackets"  colorRed={48} colorGreen={162} colorBlue={121}  />
+                    <Designproject title="Flutter Snowclock"  colorRed={48} colorGreen={162} colorBlue={121}  />
                 </div>
                 <div class={styles.five}>
                     <Designproject title="Tech Blog" colorRed={188} colorGreen={172} colorBlue={57} />

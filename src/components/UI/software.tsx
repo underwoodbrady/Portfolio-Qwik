@@ -9,10 +9,10 @@ export default component$(() => {
             </div>
             <div class="flex flex-col space-y-6 relative z-20 mt-28 mb-8 w-full">
 
-                <SoftwareProject title="Rabble™ Messaging App" role="Sveltekit + Pocketbase" color="#29B2AF" />
+                <SoftwareProject title="Rabble™ Messaging App" role="Sveltekit, Pocketbase" color="#29B2AF" />
                 <SoftwareProject title="Red Trade" role="React, Node.js, SQL" color="#D35E5E" />
-                <SoftwareProject title="Adafruit GFX Visual Editor" role="Typescript" color="#88B769" />
-                <SoftwareProject title="Snow Clock" role="API Design, C++ Arduino Code" color="#C47526" />
+                <SoftwareProject title="Adafruit GFX Visual Editor" role="Typescript, Data Structures" color="#88B769" />
+                <SoftwareProject title="Flutter Snowclock" role="API Design, C++ Arduino Code" color="#C47526" />
                 <SoftwareProject title="Animal Stacking Game" role="Unity C# Development" color="#BCAC39" />
                 <SoftwareProject title="This Website" role="Qwik.js" color="#30A279" />
 

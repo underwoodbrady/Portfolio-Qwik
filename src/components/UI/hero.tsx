@@ -3,9 +3,9 @@ import { component$ } from "@builder.io/qwik";
 export default component$(() => {
     return (
         <section class="relative text-white max-w-7xl mx-auto flex h-[calc(100vh-72px)]">
-            <div class="absolute w-1/2 top-[35%] -translate-y-1/2">
+            <div class="absolute w-5/12 top-[35%] -translate-y-1/2">
                 <h2 class="mb-8 text-5xl font-semibold text-neutral-100">Hello,</h2>
-                <h3 class="text-xl mb-8 text-neutral-200">I am a freelance software developer and web designer optimizing for <span>simplicity</span> and <span>performance</span></h3>
+                <h3 class="text-xl mb-8 text-neutral-200">I am a full-stack software developer and web designer optimizing for <span>simplicity</span> and <span>performance</span></h3>
                 <div class="w-28 h-[2px] bg-white/20 rounded-full mb-5"></div>
                 <div class="flex space-x-6 items-center">
                     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns: xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
