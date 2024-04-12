@@ -4,9 +4,10 @@ import Image from '~/media/me.png?jsx';
 
 export default component$(() => {
     return (
-        <section class="relative max-w-7xl mx-auto flex justify-between mt-12 w-full h-96 space-x-16">
-            <div class="w-64 h-96 object-cover overflow-hidden bg-neutral-700 rounded-sm" style={"border-top-image:linear-gradient(to right, grey 25%, yellow 25%, yellow 50%,red 50%, red 75%, teal 75%) 5"}>
+        <section class="relative max-w-7xl mx-auto flex justify-between mt-12 mb-8 w-full h-[460px] space-x-16">
+            <div class="relative w-72 h-[460px] object-cover overflow-hidden bg-neutral-700 rounded-sm" style={"border-top-image:linear-gradient(to right, grey 25%, yellow 25%, yellow 50%,red 50%, red 75%, teal 75%) 5"}>
                 <Image/>
+                <p class="absolute right-2 bottom-2 text-neutral-200 text-sm italic">Camp Muir, Mt. Rainier</p>
             </div>
             <div class="flex-1 flex flex-col items-start h-full justify-between">
                 <div class="flex items-center justify-between mb-8 w-full">
