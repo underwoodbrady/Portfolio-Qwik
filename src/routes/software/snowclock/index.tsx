@@ -16,7 +16,7 @@ export default component$(() => {
         </p>
 
         <p class="text-neutral-300 text-lg leading-6 mb-8">
-          Unfortunately there is no free API for snowfall so I had to web scrape and build my own using a combination of Javascript and Python. The hardware for the device was an ESP32 and a ST7789 display combined with arduino code. I then made a mock mobile app to pair the device with using Flutter and BLE.
+          Unfortunately there is no free API for snowfall so I had to web scrape and build my own using a combination of Javascript and Python. The hardware for the device was an ESP32 and a ST7789 display. I then made a mock mobile app to pair the device with using Flutter and BLE.
         </p>
       </Individualproject>
     </>

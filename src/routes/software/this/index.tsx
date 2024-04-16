@@ -1,7 +1,7 @@
 import { component$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 import Individualproject from "~/components/UI/individualproject";
-import Image from '~/media/rabble.png?jsx';
+import Image from '~/media/web.png?jsx';
 
 export default component$(() => {
   return (

@@ -18,7 +18,7 @@ export default component$(() => {
 
             <p class="text-neutral-300 text-lg leading-6 mb-8">
                 One of the key lessons from this project was managing client-side security. The code is written so the user never is able to see or iteract with server calls directly and any client information is passed to the database through a sveltekit middle layer.
-                While not implemented yet, this could allow for server side data validation and rate limiting.
+                This could eventually allow for server side data validation and rate limiting.
             </p>
       </Individualproject>
     </>
