@@ -18,7 +18,7 @@ import RustImg from '~/media/rustsm.png?jsx';
 
 interface Props {
     title: string;
-    //type: string;
+    type: string;
     tools: string[];
    // linkSite?: string;
    // linkCode?: string;
