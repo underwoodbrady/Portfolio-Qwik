@@ -27,7 +27,7 @@ interface Props {
 
 export default component$<Props>(({ title, type, tools, linkSite, linkCode, color }) => {
     return (
-        <section class="relative max-w-7xl mx-auto mt-12 h-full">
+        <section class="relative max-w-7xl mx-auto mt-12 h-full overflow-hidden">
             <div>
                 <div class="flex items-center justify-between mb-3">
                     <h2 class=" text-4xl text-neutral-200 font-semibold ">{title}</h2>
@@ -45,7 +45,7 @@ export default component$<Props>(({ title, type, tools, linkSite, linkCode, colo
                     </div>
 
                 </div>
-                <h3 class=" text-neutral-700 tracking-widest text-3xl mb-8">{type}</h3>
+                {/* <h3 class=" text-neutral-700 tracking-widest text-3xl mb-8">{type}</h3> */}
                 <div class="h-[2px] w-12 bg-white/20 rounded-full my-5" />
                 <div class="flex items-center space-x-4 mb-12">
                     <p class="text-neutral-500 font-semibold">Tools:</p>
