@@ -26,7 +26,7 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-  title: "Brady Underwood | Software - Rabble Messaging App",
+  title: "Software - Rabble Messaging App",
   meta: [
     {
       name: "this is a description",
