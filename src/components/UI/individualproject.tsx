@@ -1,9 +1,20 @@
 import { Slot, component$ } from "@builder.io/qwik";
 
-import NodeImg from '~/media/nodejs.png?jsx';
-import PocketImg from '~/media/pocketbase.png?jsx';
-import SvelteImg from '~/media/svelte.png?jsx';
-import TailwindImg from '~/media/tailwind.png?jsx';
+import NodeImg from '~/media/nodejssm.png?jsx';
+import PocketImg from '~/media/pbsm.png?jsx';
+import SvelteImg from '~/media/sveltesm.png?jsx';
+import TailwindImg from '~/media/tailwindsm.png?jsx';
+import ArduinoImg from '~/media/arduinosm.png?jsx';
+import CppImg from '~/media/cppsm.png?jsx';
+import CsharpImg from '~/media/csharpsm.png?jsx';
+import DaisyImg from '~/media/daisyuism.png?jsx';
+import FlutterImg from '~/media/fluttersm.png?jsx';
+import QwikImg from '~/media/qwiksm.png?jsx';
+import ReactImg from '~/media/reactsm.png?jsx';
+import SQLImg from '~/media/sqlsm.png?jsx';
+import TypescriptImg from '~/media/typescriptsm.png?jsx';
+import UnityImg from '~/media/unitysm.png?jsx';
+import RustImg from '~/media/rustsm.png?jsx';
 
 interface Props {
     title: string;
@@ -39,11 +50,22 @@ export default component$<Props>(({ title, type, tools, linkSite, linkCode, colo
                 <div class="flex items-center space-x-4 mb-12">
                     <p class="text-neutral-500 font-semibold">Tools:</p>
                     {tools.map((tool) =>
-                        <div class="w-6 h-6">
-                            {tool == 'svelte' || tool == 'sveltekit' && <SvelteImg />}
+                        <div class="w-6 h-6 flex items-center justify-center" key={tool}>
+                            {(tool == 'svelte' || tool == 'sveltekit') && <SvelteImg />}
                             {tool == 'pocketbase' && <PocketImg />}
                             {tool == 'nodejs' && <NodeImg />}
                             {tool == 'tailwind' && <TailwindImg />}
+                            {tool == 'arduino' && <ArduinoImg />}
+                            {(tool == 'cpp' || tool == 'c++') && <CppImg />}
+                            {(tool == 'csharp' || tool == 'c#') && <CsharpImg />}
+                            {tool == 'daisy' && <DaisyImg />}
+                            {tool == 'flutter' && <FlutterImg />}
+                            {tool == 'qwik' && <QwikImg />}
+                            {tool == 'react' && <ReactImg />}
+                            {tool == 'sql' && <SQLImg />}
+                            {tool == 'typescript' && <TypescriptImg />}
+                            {tool == 'unity' && <UnityImg />}
+                            {tool == 'rust' && <RustImg />}
                         </div>
                     )}
                 </div>

@@ -1,14 +1,14 @@
 import { component$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 import Individualproject from "~/components/UI/individualproject";
-import RabbleImg from '~/media/rabble.png?jsx';
+import Image from '~/media/rabble.png?jsx';
 
 export default component$(() => {
   return (
     <>
       <Individualproject title="Rabble Messaging App" type="Full-stack" tools={['sveltekit','pocketbase', 'nodejs', 'tailwind']} color="#29B2AF">
       <div class="w-[620px] float-right ml-8 mb-8">
-                <RabbleImg />
+                <Image />
             </div>
 
             <p class="text-neutral-300 text-lg leading-6 mb-8">
