@@ -1,5 +1,4 @@
 import { component$ } from "@builder.io/qwik";
-import styles from "./design.module.css";
 import Designproject from "./designproject";
 
 
