@@ -22,9 +22,6 @@ export default component$(() => {
             >
               ai
             </Link>
-            <div class="absolute -top-2 -right-6">
-              <p class="text-xs text-white font-bold" style={"background: -webkit-linear-gradient(#e86f6f, #D35E5E);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"}>new</p>
-            </div>
           </li> */}
           <li>
             <Link
