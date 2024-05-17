@@ -72,7 +72,7 @@ export default component$<Props>(({ title, type, tools, color }) => {
             </div>
             <Slot />
             
-            <div class="fixed left-0 bottom-0 w-full h-4 z-20" style={`background-color:${color}`}></div>
+            <div class="fixed left-0 bottom-0 w-full h-2 z-20" style={`background-color:${color}`}></div>
         </section>
     );
 });

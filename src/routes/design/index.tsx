@@ -1,14 +1,15 @@
 import { component$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 import Design from "~/components/UI/design";
+import Footer from "~/components/main/footer/footer";
 
 /*import Counter from "~/components/starter/counter/counter";*/
 
 export default component$(() => {
   return (
     <>
-
       <Design/>
+      <Footer/>
     </>
   );
 });
