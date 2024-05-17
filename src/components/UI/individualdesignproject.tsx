@@ -4,13 +4,12 @@ import { Slot, component$ } from "@builder.io/qwik";
 interface Props {
     title: string;
     type: string;
-    tools: string[];
    // linkSite?: string;
    // linkCode?: string;
     color: string;
 }
 
-export default component$<Props>(({ title, type, tools, color }) => {
+export default component$<Props>(({ title, type, color }) => {
     return (
         <section class="relative max-w-7xl mx-auto mt-12 h-full overflow-hidden">
             <div>
