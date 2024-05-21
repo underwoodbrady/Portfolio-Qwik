@@ -1,4 +1,4 @@
-import { Slot, component$, QRL  } from "@builder.io/qwik";
+import {  component$, QRL  } from "@builder.io/qwik";
 import { Link } from "@builder.io/qwik-city";
 
 interface Props {

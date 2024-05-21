@@ -1,7 +1,6 @@
 import { component$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 import Ai from "~/components/UI/ai.jsx";
-import Software from "~/components/UI/software";
 import Footer from "~/components/main/footer/footer";
 
 /*import Counter from "~/components/starter/counter/counter";*/
