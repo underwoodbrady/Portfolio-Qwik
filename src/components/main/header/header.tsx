@@ -15,7 +15,7 @@ export default component$(() => {
       </div>
       <nav class="flex space-x-16 items-center">
         <ul class="flex justify-around space-x-12">
-          {/* <li class="relative">
+          {/* <li>
             <Link
               href="/ai"
               class="text-white hover:text-neutral-300 transition-colors duration-100"
