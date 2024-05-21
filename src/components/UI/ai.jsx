@@ -13,7 +13,7 @@ export default component$(() => {
             link: "/",
         },
         {
-            title: "Transformers Visual",
+            title: "Visualized Transformers",
             link: "/",
         },
         {
@@ -200,7 +200,7 @@ export default component$(() => {
     return (
         <section class="relative max-w-7xl mx-auto flex mt-12" id="container">
             <div class="absolute left-0 top-0 flex w-full justify-between items-center">
-                <h2 class=" text-5xl text-neutral-700 tracking-widest"><span class="text-neutral-200 tracking-normal font-semibold">ai</span> research</h2>
+                <h2 class=" text-5xl text-neutral-700 tracking-widest"><span class="text-neutral-200 tracking-normal font-semibold">ai</span> work</h2>
             </div>
             {/* <div class="absolute left-0 top-20 flex w-full justify-between items-center">
                 <div class="flex-1 text-left space-y-1">

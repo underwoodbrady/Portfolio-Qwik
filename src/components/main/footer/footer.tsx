@@ -3,8 +3,8 @@ import { component$ } from "@builder.io/qwik";
 export default component$(() => {
 
   return (
-    <footer>
-      <div class="bg-neutral-800 h-16 -mx-12 px-12 flex items-center justify-between mt-8">
+    <footer class="bg-neutral-800 h-16 -mx-12 px-12">
+      <div class="w-full h-full flex items-center justify-between mt-8 max-w-7xl mx-auto">
         <span class="text-neutral-200 text-sm">Copyright © 2024 - All right reserved</span>
         <div class="flex space-x-5 items-center">
           <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
