@@ -48,9 +48,9 @@ export default component$(() => {
             </Link>
           </li>
         </ul>
-        <button class="bg-white hover:bg-neutral-300 transition-colors duration-100 rounded-sm text-black py-3 px-4 font-semibold">
+        <a download="BradyUnderwoodResume.pdf" href="/BradyUnderwood.pdf" class="cursor-pointer bg-white hover:bg-neutral-300 transition-colors duration-100 rounded-sm text-black py-3 px-4 font-semibold">
           download CV
-        </button>
+        </a>
       </nav>
 
     </header>
