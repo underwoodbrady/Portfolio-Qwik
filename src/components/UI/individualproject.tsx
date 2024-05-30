@@ -45,7 +45,6 @@ export default component$<Props>(({ title, type, tools, color }) => {
                     </div>
 
                 </div>
-                <h3 class=" text-neutral-700 tracking-widest text-3xl mb-8 hidden">{type}</h3>
                 <div class="h-[2px] w-12 bg-white/20 rounded-full my-5" />
                 <div class="flex items-center space-x-4 mb-12">
                     <p class="text-neutral-500 font-semibold">Tools:</p>

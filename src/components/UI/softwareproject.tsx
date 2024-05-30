@@ -20,7 +20,7 @@ export default component$<Props>(({ title, role, color, link }) => {
             <div>
             <Link
               href={`/software/${link}`}
-              class="font-semibold border-white px-4 py-3 rounded-sm" style={`color:${color}`}            >
+              class="font-semibold px-4 py-3" style={`color:${color}`}            >
               learn more
             </Link>
             </div>
