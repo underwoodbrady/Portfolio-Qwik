@@ -1,6 +1,7 @@
 import { component$ } from "@builder.io/qwik";
 import NameDraft from "../../../media/logotemp-mountains2.png";
 import NameDraftWhite from "../../../media/logotemp-white.svg";
+import Resume from "../../../media/document-text.svg";
 import { Link } from '@builder.io/qwik-city';
 
 
@@ -41,14 +42,15 @@ export default component$(() => {
           </li>
           <li>
             <Link
-              href="/about"
+              href="/aboutnew"
               class="text-neutral-100 hover:text-neutral-300 transition-colors duration-100"
             >
               about
             </Link>
           </li>
         </ul>
-        <a download="BradyUnderwoodResume.pdf" href="/BradyUnderwood.pdf" class="cursor-pointer bg-white hover:bg-neutral-300 transition-colors duration-100 rounded-sm text-black py-3 px-4 font-semibold">
+        <a download="BradyUnderwoodResume.pdf" href="/BradyUnderwood.pdf" class="flex cursor-pointer bg-white text-[rgb(24,24,24)] hover:bg-neutral-200 transition-colors duration-100  py-3 px-4 font-semibold rounded-sm">
+          <img src={Resume} alt="Resume Icon" width={16} height={16} class="mr-2"/>
           download CV
         </a>
       </nav>

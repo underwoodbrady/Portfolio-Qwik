@@ -31,7 +31,7 @@ C198.6,8144.1,84,7990.3,84,7809.1C84,7582.6,263.1,7399,484,7399"/>
                     <a href="https://www.linkedin.com/in/brady-underwood/" target="_blank">
 
                         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                            viewBox="0 0 800 800" style="enable-background:new 0 0 800 800;" xml:space="preserve" width="24px" class="fill-[#8C8C8C] hover:fill-[#88B769] hover:cursor-pointer duration-100">
+                            viewBox="0 0 800 800" style="enable-background:new 0 0 800 800;" xml:space="preserve" width="24px" class="fill-[#8C8C8C] hover:fill-[#D35E5E] hover:cursor-pointer duration-100">
                             <path d="M737.5,0h-675C28,0,0,28,0,62.5v675C0,772,28,800,62.5,800h675c34.5,0,62.5-28,62.5-62.5v-675
 	C800,28,772,0,737.5,0z M288.1,567.3h-78V317.8h78V567.3z M247,286.6h-0.6c-28.3,0-46.6-19.1-46.6-43.3c0-24.7,18.9-43.3,47.7-43.3
 	s46.4,18.6,47,43.3C294.7,267.3,276.4,286.6,247,286.6z M600,567.3h-88.4V438.3c0-33.8-13.8-56.9-44.2-56.9
@@ -41,7 +41,7 @@ C198.6,8144.1,84,7990.3,84,7809.1C84,7582.6,263.1,7399,484,7399"/>
                     </a>
                     <a href="https://www.instagram.com/dev.brady/" target="_blank">
                         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                            viewBox="0 0 800 800" style="enable-background:new 0 0 800 800;" xml:space="preserve" width="24px" class="fill-[#8C8C8C] hover:fill-[#5bdcda] hover:cursor-pointer duration-100">
+                            viewBox="0 0 800 800" style="enable-background:new 0 0 800 800;" xml:space="preserve" width="24px" class="fill-[#8C8C8C] hover:fill-[#30A279] hover:cursor-pointer duration-100">
                             <path style="fill-rule:evenodd;clip-rule:evenodd" d="M400,600c110.5,0,200-89.5,200-200c0-110.5-89.5-200-200-200c-110.5,0-200,89.5-200,200
 	C200,510.5,289.5,600,400,600z M400,533.3c73.6,0,133.3-59.7,133.3-133.3c0-73.6-59.7-133.3-133.3-133.3
 	c-73.6,0-133.3,59.7-133.3,133.3C266.7,473.6,326.4,533.3,400,533.3z"/>

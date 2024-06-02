@@ -16,7 +16,7 @@ interface Props {
 export default component$<Props>(({ title, id, link, onHover, onLeave, highlighed, colorRed, colorGreen, colorBlue }) => {
     return (
         link ? (<Link href={link} class="cursor-pointer" > 
-            <div class="relative text-center font-semibold rounded-sm px-4 w-28 h-28 bg-[rgb(33,33,33)] border-r-4 border-neutral-400 hover:border-white hover:text-white flex justify-center items-center text-sm text-neutral-400 select-none transition-colors duration-100 group" id={id} onMouseEnter$={onHover} onMouseLeave$={onLeave} style = {highlighed ? " border-color:white;" : ""} >
+            <div class="relative text-center font-semibold rounded-sm px-4 w-28 h-28 bg-[rgb(33,33,33)] border-r-4 border-neutral-200 hover:border-white hover:text-white flex justify-center items-center text-sm text-neutral-200 select-none transition-colors duration-100 group" id={id} onMouseEnter$={onHover} onMouseLeave$={onLeave} style = {highlighed ? " border-color:white;" : ""} >
                 {title}
                 <div class="z-20 absolute -left-6 -top-6 w-16 h-16 rounded-full bg-neutral-900 hidden group-hover:flex items-center justify-center transition-colors duration-100">
                     <div class="font-semibold text-xs">learn more</div>

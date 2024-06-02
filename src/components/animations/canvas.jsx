@@ -10,27 +10,35 @@ export default component$(() => {
             console.log(canvasRef.value);
             const ctx = canvas.getContext('2d');
 
-            let width = window.innerWidth;
-            let height = window.innerHeight;
-            canvas.width = width;
-            canvas.height = height;
-
             let smoke = [];
+            let width,height;
 
             let mouseX = -1;
             let mouseY = -1;
-            let mouseXVel = -1;
-            let mouseYVel = -1;
-            let mouseYFly = -1;
+            // let mouseXVel = -1;
+            // let mouseYVel = -1;
+            // let mouseYFly = -1;
 
-            let scaleWithWidth=Math.min(1.25, (window.screen.width/1280));
+            let scaleWithWidth=Math.min(1.4, (window.screen.width/1280))*0.8;
+
+
+            let resizeCanvas = function () {
+                width = window.innerWidth;
+                height = window.innerHeight;
+                canvas.width = width;
+                canvas.height = height;
+                scaleWithWidth=Math.min(1.4, (window.screen.width/1280))*0.8;
+            }
+            
+            resizeCanvas();
 
             window.addEventListener("mousemove", mousePos);
 
-            function mousePos(e) {
-                mouseXVel = (mouseX - e.clientX);
-                mouseYVel = (mouseY - e.clientY);
+            window.addEventListener('resize', function () {
+                resizeCanvas();
+            });
 
+            function mousePos(e) {
                 mouseX = e.clientX;
                 mouseY = e.clientY;
             }
@@ -45,7 +53,7 @@ export default component$(() => {
                 this.size = (this.sizeScale / (this.ys))*scaleWithWidth**2;
                 this.toRemove = false;
                 this.lifetime = 0;
-                this.maxLifetime = 240; //300/60fps = 5 seconds
+                this.maxLifetime = 300; //300/60fps = 5 seconds
                 this.fadevalue = this.maxLifetime;
             }
 
@@ -57,9 +65,6 @@ export default component$(() => {
                 if (Math.sqrt(Math.abs(distX) + Math.abs(distY)) < minDist) {
                     this.xs += (minDist - distX)/(reduction);
                     this.ys -= (minDist - distY)/(reduction);
-
-                    // this.xs -= mouseXVel ? mouseXVel/(reduction/2) : 0;
-                    // this.ys += mouseYVel ? mouseYVel/(reduction/2) : 0;
                 }
             }
 
@@ -129,13 +134,10 @@ export default component$(() => {
 
             function update() {
                 setTimeout(function () {
-
                     windIntensity += windIntensity > newWindIntensity ? -0.001 : 0.001;
-
                     if (Math.abs(newWindIntensity - windIntensity) < 0.001) newWindIntensity = Math.random() - 0.5;
 
                     tryCreateSmoke();
-
                     ctx.clearRect(0, 0, width, height);
                     animateSmoke();
                     removeOutliers();
