@@ -7,7 +7,7 @@ export default component$(() => {
   return (
     <>
       <Individualproject title="Rabble Messaging App" type="Full-stack" tools={['sveltekit','pocketbase', 'nodejs', 'tailwind']} color="#29B2AF">
-      <div class="w-[620px] float-right ml-8 mb-8">
+      <div class="w-[620px] float-right ml-12 mb-8">
                 <Image />
             </div>
 

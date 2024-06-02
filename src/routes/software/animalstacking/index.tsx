@@ -7,7 +7,7 @@ export default component$(() => {
   return (
     <>
       <Individualproject title="Animal Stacking Game" type="Unity2D" tools={['unity','c#']} color="#BCAC39">
-      <div class="w-[620px] float-right ml-8 mb-8">
+      <div class="w-[620px] float-right ml-12 mb-8">
                 <Image />
             </div>
 

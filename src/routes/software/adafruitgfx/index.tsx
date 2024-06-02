@@ -7,7 +7,7 @@ export default component$(() => {
   return (
     <>
       <Individualproject title="Adafruit GFX Visual Editor" type="Frontend" tools={['svelte', 'typescript', 'arduino', 'rust']} color="#88B769">
-        <div class="w-[620px] float-right ml-8 mb-8">
+        <div class="w-[620px] float-right ml-12 mb-8">
           <Image />
         </div>
 

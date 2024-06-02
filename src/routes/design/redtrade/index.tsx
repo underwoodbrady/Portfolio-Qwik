@@ -13,31 +13,31 @@ export default component$(() => {
       <Individualdesignproject title="Red Trade" subtitle="Constant Iterative Design" color="#D35E5E">
         <div class="flex justify-between space-x-8 mb-24">
           <div class="w-7/12">
-            <Image1 class="rounded-sm" />
+            <Image1 class="" />
           </div>
           <div class="w-5/12">
-            <h3 class="text-neutral-200 font-semibold text-xl mb-3">Step 1.</h3>
+            <h3 class="text-neutral-200 font-semibold text-xl mb-3">Version 1.</h3>
             <div class="h-[2px] w-12 bg-white/20 rounded-full my-3" />
             <p class="text-neutral-300 text-lg leading-6 mb-8">Define and Ideate</p>
           </div>
         </div>
         <div class="flex justify-between space-x-8 mb-24">
-          <div class="w-5/12 text-right">
-            <h3 class="text-neutral-200 font-semibold text-xl mb-3">Step 2.</h3>
-            <div class="h-[2px] w-12 bg-white/20 rounded-full my-3 ml-auto" />
+          <div class="w-5/12">
+            <h3 class="text-neutral-200 font-semibold text-xl mb-3">Version 2.</h3>
+            <div class="h-[2px] w-12 bg-white/20 rounded-full my-3" />
             <p class="text-neutral-300 text-lg leading-6 mb-8">Prototype</p>
           </div>
           <div class="w-7/12">
-            <Image2 class="rounded-sm" />
+            <Image2 class="" />
           </div>
 
         </div>
         <div class="flex justify-between space-x-8 mb-12">
           <div class="w-7/12">
-            <Image3 class="rounded-sm" />
+            <Image3 class="" />
           </div>
           <div class="w-5/12">
-            <h3 class="text-neutral-200 font-semibold text-xl mb-3">Step 3.</h3>
+            <h3 class="text-neutral-200 font-semibold text-xl mb-3">Version 3.</h3>
             <div class="h-[2px] w-12 bg-white/20 rounded-full my-3" />
             <p class="text-neutral-300 text-lg leading-6 mb-8">Refine and Test</p>
           </div>

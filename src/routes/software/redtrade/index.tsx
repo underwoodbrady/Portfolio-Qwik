@@ -7,7 +7,7 @@ export default component$(() => {
   return (
     <>
       <Individualproject title="Red Trade" type="Full-stack" tools={['react', 'tailwind', 'nodejs', 'sql']} color="#D35E5E">
-        <div class="w-[620px] float-right ml-8 mb-8">
+        <div class="w-[620px] float-right ml-12 mb-8">
           <Image />
         </div>
 

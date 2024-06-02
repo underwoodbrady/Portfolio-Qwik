@@ -1,4 +1,4 @@
-import { component$, useSignal, useTask$, useVisibleTask$ } from "@builder.io/qwik";
+import { component$, useSignal, useVisibleTask$ } from "@builder.io/qwik";
 
 export default component$(() => {
     const canvasRef = useSignal(undefined);
@@ -23,6 +23,7 @@ export default component$(() => {
             let mouseYVel = -1;
             let mouseYFly = -1;
 
+            let scaleWithWidth=Math.min(1.25, (window.screen.width/1280));
 
             window.addEventListener("mousemove", mousePos);
 
@@ -35,13 +36,13 @@ export default component$(() => {
             }
 
             function Smoke(x, y) {
-                this.x = x + Math.random() * 25;
-                this.y = y + Math.random() * 25;
-                this.xs = (Math.random() - 0.5) * 3 / 4;
-                this.ys = ((Math.random()) + 1);
+                this.x = x + Math.random() * 25*scaleWithWidth;
+                this.y = y + Math.random() * 25*scaleWithWidth;
+                this.xs = (Math.random() - 0.5) * 3 / 4 *scaleWithWidth;
+                this.ys = ((Math.random()) + 1) *scaleWithWidth;
                 this.shade = `${((Math.random() + 2) * 35)}`;
                 this.sizeScale = 18;
-                this.size = (this.sizeScale / (this.ys));
+                this.size = (this.sizeScale / (this.ys))*scaleWithWidth**2;
                 this.toRemove = false;
                 this.lifetime = 0;
                 this.maxLifetime = 240; //300/60fps = 5 seconds
@@ -64,7 +65,7 @@ export default component$(() => {
 
             Smoke.prototype.update = function () {
                 this.checkCollisions()
-                this.x += this.xs + windIntensity;
+                this.x += this.xs + windIntensity*scaleWithWidth;
                 this.y -= this.ys;
 
                 this.lifetime += 1;
@@ -108,6 +109,24 @@ export default component$(() => {
             let windIntensity = 0;
             let newWindIntensity = -0.3;
 
+            function tryCreateSmoke(){
+                if (loopIteration == 0) {
+                    let newSmoke = new Smoke((width * 73 / 100), height* 95/ 100);
+                    smoke.push(newSmoke);
+                }
+
+                loopIteration++;
+
+                if (loopIteration > spawnLimiter) loopIteration = 0;
+            }
+
+            //Preload 4 seconds of smoke to prevent delay
+            for(let preload=0; preload<240; preload++){
+                tryCreateSmoke();
+                ctx.clearRect(0, 0, width, height);
+                animateSmoke();
+            }
+
             function update() {
                 setTimeout(function () {
 
@@ -115,14 +134,7 @@ export default component$(() => {
 
                     if (Math.abs(newWindIntensity - windIntensity) < 0.001) newWindIntensity = Math.random() - 0.5;
 
-                    if (loopIteration == 0) {
-                        let newSmoke = new Smoke((width * 73 / 100), height - 50);
-                        smoke.push(newSmoke);
-                    }
-
-                    loopIteration++;
-
-                    if (loopIteration > spawnLimiter) loopIteration = 0;
+                    tryCreateSmoke();
 
                     ctx.clearRect(0, 0, width, height);
                     animateSmoke();
