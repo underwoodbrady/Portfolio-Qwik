@@ -30,14 +30,11 @@ export default component$(() => {
                 </p>
 
                 <p class="text-neutral-400 text-lg mb-6 ">
-                    Outside of work I stay busy hiking, skiing, and longboarding and enjoy just about anything outdoors. When I'm not outdoors, I enjoy spending time with friends and family.
+                    Outside of work I stay busy hiking, skiing, and longboarding and enjoy just about anything outdoors.
                 </p>
 
                 <p class="text-neutral-400 text-lg mb-6 ">
-                    I am hoping to secure a job at a software company and am always looking to continue building my skills as a programmer and as a designer.
-                </p>
-                <p class="text-neutral-400 text-lg mb-6 ">
-                    For business inquiries feel free to <a>email</a> me.
+                    I am hoping to secure a job at a software company and am always looking to continue building my skills as a programmer and as a designer.  For business inquiries feel free to <a>email</a> me.
                 </p>
             </div>
 

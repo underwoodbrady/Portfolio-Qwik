@@ -12,13 +12,13 @@ export default component$(() => {
   return (
     <>
       <Individualdesignproject title="Red Trade" subtitle="Constant Iterative Design" color="#D35E5E">
-        <Popinimage title="Step 1." subtitle="Define and Ideate" leftImg>
+        <Popinimage title="Version 1." subtitle="Define and Ideate" leftImg>
           <Image1 class="rounded-sm" />
         </Popinimage>
-        <Popinimage title="Step 2." subtitle="Prototype" >
+        <Popinimage title="Version 2." subtitle="Prototype" >
           <Image2 class="rounded-sm" />
         </Popinimage>
-        <Popinimage title="Step 3." subtitle="Refine and Test" leftImg>
+        <Popinimage title="Version 3." subtitle="Refine and Test" leftImg>
           <Image3 class="rounded-sm" />
         </Popinimage>
       </Individualdesignproject>
