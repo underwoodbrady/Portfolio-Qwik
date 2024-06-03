@@ -6,7 +6,7 @@ import Image from '~/media/web.png?jsx';
 export default component$(() => {
   return (
     <>
-      <Individualproject title="This Website" type="Frontend" tools={['qwik', 'tailwind']} color="#C47526" linkCode="https://github.com/underwoodbrady/Portfolio-Qwik">
+      <Individualproject title="This Website" tools={['qwik', 'tailwind']} color="#C47526" linkCode="https://github.com/underwoodbrady/Portfolio-Qwik">
         <div class="w-[620px] float-right ml-12 mb-8">
           <Image />
         </div>

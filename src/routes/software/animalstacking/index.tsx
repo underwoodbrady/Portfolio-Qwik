@@ -6,7 +6,7 @@ import Image from '~/media/animalstacking.png?jsx';
 export default component$(() => {
   return (
     <>
-      <Individualproject title="Animal Stacking Game" type="Unity2D" tools={['unity','c#']} color="#BCAC39">
+      <Individualproject title="Animal Stacking Game" tools={['unity','c#']} color="#BCAC39">
       <div class="w-[620px] float-right ml-12 mb-8">
                 <Image />
             </div>

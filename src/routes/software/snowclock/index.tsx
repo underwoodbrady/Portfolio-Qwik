@@ -6,7 +6,7 @@ import Image from '~/media/fluttersnowclock.png?jsx';
 export default component$(() => {
   return (
     <>
-      <Individualproject title="Flutter Snowclock" type="Hardware + Software" tools={['flutter', 'c++', 'arduino']} color="#30A279" linkCode="https://github.com/underwoodbrady/flutter-ble-snowcounter">
+      <Individualproject title="Flutter Snowclock" tools={['flutter', 'c++', 'arduino']} color="#30A279" linkCode="https://github.com/underwoodbrady/flutter-ble-snowcounter">
         <div class="w-[620px] float-right ml-12 mb-8">
           <Image />
         </div>
