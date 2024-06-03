@@ -12,7 +12,7 @@ export default component$(() => {
         </div>
 
         <p class="text-neutral-300 text-lg leading-6 mb-8">
-          The goal of this website from a software perspective was to experiment with the cutting edge technology in website performance with Qwik.js. This website is relatively simple in terms of the amount of javascript it has to load so it would likely perform well with any framework. However, it was interesting to learn about how Qwik works and what Edge servers even are.
+          The goal of this website from a software perspective was to experiment with the cutting edge technology in website performance with Qwik.js. This website is relatively simple in terms of the amount of javascript it has to load so it would likely perform well with any framework. However, it was interesting to learn about how Qwik works.
         </p>
 
         <p class="text-neutral-300 text-lg leading-6 mb-8">
