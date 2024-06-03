@@ -8,7 +8,7 @@ interface Props {
 
 export default component$<Props>(({ title, subtitle, leftImg = false }) => {
 
-    let showImg = useSignal(false);
+    const showImg = useSignal(false);
 
     useVisibleTask$(async () => {
         const intersectionObserver = new IntersectionObserver((entries) => {

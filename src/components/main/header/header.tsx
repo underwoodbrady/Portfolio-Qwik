@@ -1,6 +1,5 @@
 import { component$ } from "@builder.io/qwik";
 import NameDraft from "../../../media/logotemp-mountains2.png";
-import NameDraftWhite from "../../../media/logotemp-white.svg";
 import Resume from "../../../media/document-text.svg";
 import { Link } from '@builder.io/qwik-city';
 

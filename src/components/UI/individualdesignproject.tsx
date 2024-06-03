@@ -1,6 +1,4 @@
 import { Slot, component$ } from "@builder.io/qwik";
-import Image3 from '~/media/red3.png?jsx';
-
 
 interface Props {
     title: string;
