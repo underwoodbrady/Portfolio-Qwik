@@ -1,7 +1,7 @@
 import { component$ } from "@builder.io/qwik";
 import Image from '~/media/me.png?jsx';
-import Locate from '~/media/map.svg';
-import Email from '~/media/mail.svg';
+// import Locate from '~/media/map.svg';
+// import Email from '~/media/mail.svg';
 
 
 export default component$(() => {

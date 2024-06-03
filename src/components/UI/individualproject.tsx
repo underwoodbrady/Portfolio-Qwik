@@ -18,14 +18,13 @@ import RustImg from '~/media/rustsm.png?jsx';
 
 interface Props {
     title: string;
-    type: string;
     tools: string[];
     // linkSite?: string;
     linkCode?: string;
     color: string;
 }
 
-export default component$<Props>(({ title, type, tools, color, linkCode }) => {
+export default component$<Props>(({ title, tools, color, linkCode }) => {
     return (
         <section class="relative max-w-7xl mx-auto mt-12 h-full overflow-hidden">
             <div>
