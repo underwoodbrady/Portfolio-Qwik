@@ -42,7 +42,7 @@ export default component$(() => {
           </li>
           <li>
             <Link
-              href="/aboutnew"
+              href="/about"
               class="text-neutral-100 hover:text-neutral-300 transition-colors duration-100"
             >
               about
