@@ -1,11 +1,11 @@
 import { component$, useVisibleTask$ } from "@builder.io/qwik";
 import { useNavigate, type DocumentHead } from "@builder.io/qwik-city";
 import Individualdesignproject from "~/components/UI/individualdesignproject";
-import Popinimage from "~/components/UI/popinimage";
 import Footer from "~/components/main/footer/footer";
-import Image1 from '~/media/red1.png?jsx';
-import Image2 from '~/media/red2.png?jsx';
-import Image3 from '~/media/red3.png?jsx';
+// import Popinimage from "~/components/UI/popinimage";
+// import Image1 from '~/media/red1.png?jsx';
+// import Image2 from '~/media/red2.png?jsx';
+// import Image3 from '~/media/red3.png?jsx';
 
 export default component$(() => {
 
@@ -20,7 +20,7 @@ export default component$(() => {
   return (
     <>
       <Individualdesignproject title="Simply Brackets" subtitle="Simplicity is Key" color="#29B2AF">
-        <Popinimage title="Step 1." subtitle="Define and Ideate" leftImg>
+        {/* <Popinimage title="Step 1." subtitle="Define and Ideate" leftImg>
           <Image1 class="rounded-sm" />
         </Popinimage>
         <Popinimage title="Step 2." subtitle="Prototype" >
@@ -28,7 +28,9 @@ export default component$(() => {
         </Popinimage>
         <Popinimage title="Step 3." subtitle="Refine and Test" leftImg>
           <Image3 class="rounded-sm" />
-        </Popinimage>
+        </Popinimage> */}
+        <p class="text-neutral-500 font-semibold text-center h-[800px] py-24">This page is a work in progress</p>
+
       </Individualdesignproject>
       <Footer />
     </>

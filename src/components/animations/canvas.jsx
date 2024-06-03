@@ -86,6 +86,7 @@ export default component$(() => {
 
             Smoke.prototype.fade = function () {
                 this.fadevalue -= 2;
+                this.size+=0.05;
             }
 
             Smoke.prototype.draw = function () {
@@ -109,7 +110,7 @@ export default component$(() => {
             }
 
             let loopIteration = 0;
-            let spawnLimiter = 3; // Higher number is slower speed
+            let spawnLimiter = 2; // Higher number is slower speed
 
             let windIntensity = 0;
             let newWindIntensity = -0.3;

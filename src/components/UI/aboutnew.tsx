@@ -7,8 +7,8 @@ import Email from '~/media/mail.svg';
 export default component$(() => {
     return (
         <section class="relative max-w-7xl mx-auto flex justify-between mt-12 mb-8 w-full space-x-16">
-            <div class="bg-[rgb(33,33,33)] p-6 w-[28%] h-full rounded-sm">
-                <div class="relative w-full object-cover overflow-hidden h-[420px] mb-6" style={"border-top-image:linear-gradient(to right, grey 25%, yellow 25%, yellow 50%,red 50%, red 75%, teal 75%) 5"}>
+            <div class="bg-[rgb(33,33,33)] p-6 w-[26%] h-full rounded-sm">
+                <div class="relative w-full object-cover overflow-hidden h-[380px] mb-6" style={"border-top-image:linear-gradient(to right, grey 25%, yellow 25%, yellow 50%,red 50%, red 75%, teal 75%) 5"}>
                     <Image />
                     <p class="absolute right-2 bottom-2 text-neutral-200 text-xs italic">Camp Muir, Mt. Rainier</p>
                 </div>
