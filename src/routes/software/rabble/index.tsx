@@ -6,8 +6,8 @@ import Image from '~/media/rabble.png?jsx';
 export default component$(() => {
   return (
     <>
-      <Individualproject title="Rabble Messaging App" type="Full-stack" tools={['sveltekit','pocketbase', 'nodejs', 'tailwind']} color="#29B2AF">
-      <div class="w-[620px] float-right ml-8 mb-8">
+      <Individualproject title="Rabble Messaging App" tools={['sveltekit','pocketbase', 'nodejs', 'tailwind']} color="#29B2AF" linkCode="https://github.com/underwoodbrady/pocketbase-discord-clone">
+      <div class="w-[620px] float-right ml-12 mb-8">
                 <Image />
             </div>
 

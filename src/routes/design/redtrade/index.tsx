@@ -1,16 +1,34 @@
 import { component$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
+import Individualdesignproject from "~/components/UI/individualdesignproject";
+import Popinimage from "~/components/UI/popinimage";
+import Footer from "~/components/main/footer/footer";
+import Image1 from '~/media/red1.png?jsx';
+import Image2 from '~/media/red2.png?jsx';
+import Image3 from '~/media/red3.png?jsx';
+
 
 export default component$(() => {
   return (
     <>
-      design
+      <Individualdesignproject title="Red Trade" subtitle="Constant Iterative Design" color="#D35E5E">
+        <Popinimage title="Version 1." subtitle="Define and Ideate" leftImg>
+          <Image1 class="rounded-sm" />
+        </Popinimage>
+        <Popinimage title="Version 2." subtitle="Prototype" >
+          <Image2 class="rounded-sm" />
+        </Popinimage>
+        <Popinimage title="Version 3." subtitle="Refine and Test" leftImg>
+          <Image3 class="rounded-sm" />
+        </Popinimage>
+      </Individualdesignproject>
+      <Footer />
     </>
   );
 });
 
 export const head: DocumentHead = {
-  title: "Design - [subcat]",
+  title: "Design - Red Trade",
   meta: [
     {
       name: "this is a description",

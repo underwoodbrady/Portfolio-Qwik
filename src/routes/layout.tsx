@@ -5,6 +5,7 @@ import type { RequestHandler } from "@builder.io/qwik-city";
 import Header from "~/components/main/header/header";
 
 import styles from "./styles.css?inline";
+import '@fontsource/lato';
 
 export const onGet: RequestHandler = async ({ cacheControl }) => {
   // Control caching for this request for best performance and to reduce hosting costs:

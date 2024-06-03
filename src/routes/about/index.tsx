@@ -1,12 +1,12 @@
 import { component$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
-import About from "~/components/UI/about";
+import Aboutnew from "~/components/UI/aboutnew";
 
 
 export default component$(() => {
   return (
     <>
-      <About/>
+      <Aboutnew/>
       {/* <div class="relative w-[calc(100%+96px)] h-16 -mx-12 mt-12" style=" background-image: url('/profilebackground5.svg');background-repeat: repeat-x;background-size:220px;"></div> */}
     </>
   );

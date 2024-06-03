@@ -1,41 +1,26 @@
 import { Slot, component$ } from "@builder.io/qwik";
 
-
 interface Props {
     title: string;
-    type: string;
-   // linkSite?: string;
-   // linkCode?: string;
-    color: string;
+    subtitle?: string;
+    // linkSite?: string;
+    // linkCode?: string;
+    color?: string;
 }
 
-export default component$<Props>(({ title, type, color }) => {
+export default component$<Props>(({ title, subtitle, color }) => {
     return (
-        <section class="relative max-w-7xl mx-auto mt-12 h-full overflow-hidden">
-            <div>
-                <div class="flex items-center justify-between mb-3">
-                    <h2 class=" text-4xl text-neutral-200 font-semibold ">{title}</h2>
-                    <div class="flex items-center space-x-6">
-                        <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6">
-                            <g clip-path="url(#clip0_429_11072)">
-                                <path d="M11 3.99994H4V17.9999C4 19.1045 4.89543 19.9999 6 19.9999H18C19.1046 19.9999 20 19.1045 20 17.9999V12.9999" stroke="#8C8C8C" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
-                                <path d="M9 14.9999L20 3.99994" stroke="#8C8C8C" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
-                                <path d="M15 3.99994H20V8.99994" stroke="#8C8C8C" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
-                            </g>
-                        </svg>
-                        <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-7 h-7">
-                            <path d="M7 8L3 11.6923L7 16M17 8L21 11.6923L17 16M14 4L10 20" stroke="#8C8C8C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                    </div>
-
+        <section class="relative max-w-7xl mx-auto mt-12 h-full">
+            <div class="flex items-center mb-20 space-x-6">
+                {/* <div class="rounded-sm h-20 w-20 border-4" style={`background-color:rgb(33,33,33);border-color:${color}`}></div> */}
+                <div class="rounded-full h-20 w-1 bg-red-400" style={`background-color:${color}`}></div>
+                <div>
+                    <h2 class=" text-4xl text-neutral-200 font-semibold mb-3">{title}</h2>
+                    <h2 class=" text-xl text-neutral-400">{subtitle}</h2>
                 </div>
-                <h3 class=" text-neutral-700 tracking-widest text-3xl mb-8 hidden">{type}</h3>
-                <div class="h-[2px] w-12 bg-white/20 rounded-full my-5" />
-               
             </div>
+
             <Slot />
-            
-            <div class="fixed left-0 bottom-0 w-full h-2 z-20" style={`background-color:${color}`}></div>
         </section>
     );
 });
