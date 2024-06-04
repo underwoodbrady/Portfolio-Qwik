@@ -47,7 +47,6 @@
     "@fontsource/lato": "^5.0.21",
     "@fontsource/roboto": "^5.0.13",
     "@vercel/analytics": "^1.3.1",
-    "qwik-lottie": "^0.1.8",
-    "qwik-lottie-web": "^0.2.0"
+    "qwik-lottie": "^0.1.8"
   }
 }
