@@ -15,8 +15,8 @@ export default component$<Props>(({ title, subtitle, color }) => {
                 {/* <div class="rounded-sm h-20 w-20 border-4" style={`background-color:rgb(33,33,33);border-color:${color}`}></div> */}
                 <div class="rounded-full h-20 w-1 bg-red-400" style={`background-color:${color}`}></div>
                 <div>
-                    <h2 class=" text-4xl text-neutral-200 font-semibold mb-3">{title}</h2>
-                    <h2 class=" text-xl text-neutral-400">{subtitle}</h2>
+                    <h2 class="text-3xl lg:text-4xl text-neutral-200 font-semibold mb-3">{title}</h2>
+                    <h2 class="text-lg lg:text-xl text-neutral-400">{subtitle}</h2>
                 </div>
             </div>
 

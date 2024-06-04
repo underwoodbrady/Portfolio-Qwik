@@ -29,8 +29,6 @@ export default component$(() => {
   useStyles$(styles);
 
   useVisibleTask$(() => {
-
-    console.log("pdiddy")
     inject();
   });
   

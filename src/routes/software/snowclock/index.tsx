@@ -11,11 +11,11 @@ export default component$(() => {
           <Image />
         </div>
 
-        <p class="text-neutral-300 text-lg leading-6 mb-8">
+        <p class="text-neutral-300 text-base lg:text-lg leading-6 mb-8">
           This project incorporated almost every aspect of the design process. It began as an simple idea from my brother and expanded into a physical prototype modeled in blender and 3D printed. The idea was to build a bedside clock that instead of displaying time it showed the overnight snowfall at the local ski resort.
         </p>
 
-        <p class="text-neutral-300 text-lg leading-6 mb-8">
+        <p class="text-neutral-300 text-base lg:text-lg leading-6 mb-8">
           Unfortunately there is no free API for snowfall so I had to web scrape and build my own using a combination of Javascript and Python. The hardware for the device was an ESP32 and a ST7789 display. I then made a mock mobile app to pair the device with using Flutter and BLE.
         </p>
       </Individualproject>
