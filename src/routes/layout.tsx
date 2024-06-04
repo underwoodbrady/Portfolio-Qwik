@@ -1,7 +1,6 @@
 import { component$, Slot, useStyles$ } from "@builder.io/qwik";
 import { routeLoader$ } from "@builder.io/qwik-city";
 import type { RequestHandler } from "@builder.io/qwik-city";
-import { inject  } from "@vercel/analytics"
 
 import Header from "~/components/main/header/header";
 
@@ -27,9 +26,7 @@ export const useServerTimeLoader = routeLoader$(() => {
 
 export default component$(() => {
   useStyles$(styles);
-
-  inject();
-
+  
   return (
     <div class="mx-12">
       <Header />
