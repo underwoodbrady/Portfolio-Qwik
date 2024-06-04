@@ -17,7 +17,7 @@ export default component$(() => {
         <Popinimage title="Revamped Design" subtitle="Blender Remodel + Mobile App" >
           <Image2 class="rounded-sm" />
         </Popinimage>
-        <Popinimage title="Future Plans" subtitle="Mockups of future designs" leftImg>
+        <Popinimage title="Future Plans" subtitle="Mockup of future design" leftImg>
           <Image3 class="rounded-sm" />
         </Popinimage>
 
