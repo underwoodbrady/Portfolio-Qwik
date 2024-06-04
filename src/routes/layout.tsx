@@ -1,7 +1,6 @@
-import { component$, Slot, useStyles$, useTask$, useVisibleTask$ } from "@builder.io/qwik";
+import { component$, Slot, useStyles$, useVisibleTask$ } from "@builder.io/qwik";
 import { routeLoader$ } from "@builder.io/qwik-city";
 import type { RequestHandler } from "@builder.io/qwik-city";
-import { isServer } from '@builder.io/qwik/build';
 
 import Header from "~/components/main/header/header";
 import { inject  } from "@vercel/analytics"
