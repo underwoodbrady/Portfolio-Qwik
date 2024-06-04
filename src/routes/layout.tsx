@@ -1,8 +1,9 @@
-import { component$, Slot, useStyles$ } from "@builder.io/qwik";
+import { component$, Slot, useStyles$, useVisibleTask$ } from "@builder.io/qwik";
 import { routeLoader$ } from "@builder.io/qwik-city";
 import type { RequestHandler } from "@builder.io/qwik-city";
 
 import Header from "~/components/main/header/header";
+import { inject  } from "@vercel/analytics"
 
 import styles from "./styles.css?inline";
 import '@fontsource/lato';
@@ -26,6 +27,12 @@ export const useServerTimeLoader = routeLoader$(() => {
 
 export default component$(() => {
   useStyles$(styles);
+
+  useVisibleTask$(() => {
+
+    console.log("pdiddy")
+    inject();
+  });
   
   return (
     <div class="mx-12">

@@ -24,7 +24,7 @@ export default component$(() => {
         <link rel="manifest" href="/manifest.json" />
         <RouterHead />
         <ServiceWorkerRegister />
-        <script defer src="../src/analytics.ts" type="module"/> 
+        {/* <script defer src="../src/analytics.ts" type="module"/>  */}
       </head>
       <body lang="en">
         <RouterOutlet />
