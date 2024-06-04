@@ -6,9 +6,9 @@ export default component$(() => {
     return (
         <section class="relative max-w-7xl mx-auto flex mt-12">
             <div class="absolute left-0 top-0 flex w-full justify-between items-center">
-                <h2 class="text-5xl text-neutral-700 tracking-widest"><span class="font-semibold text-neutral-200 tracking-normal">design</span> portfolio</h2>
+                <h2 class="text-4xl max-w-[160px] lg:max-w-full lg:text-5xl text-neutral-700 tracking-widest leading-tight lg:leading-none"><span class="font-semibold text-neutral-200 tracking-normal">design</span> portfolio</h2>
             </div>
-            <div class="relative mt-28 mb-8 w-full grid gap-x-6 gap-y-6 grid-cols-2 auto-rows-[112px]">
+            <div class="relative mt-32 lg:mt-28 mb-8 w-full flex flex-col lg:grid lg:gap-x-6 gap-y-6 lg:grid-cols-2 auto-rows-[112px]">
                 <div  class="col-start-1 col-end-4 row-start-1 row-end-3">
                     <Designproject title="Urban Wordle" link="urbanwordle" colorRed={136} colorGreen={183} colorBlue={105}/>
                 </div>

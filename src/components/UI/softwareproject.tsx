@@ -13,23 +13,23 @@ interface Props {
 
 export default component$<Props>(({ title, role, color, link, stars, starslink = "/" }) => {
     return (
-        <div class={"flex items-center justify-between bg-[rgb(33,33,33)] w-full p-8 rounded-sm border-b-8"} style={`border-color:${color}`}>
+        <div class={"flex items-center justify-between bg-[rgb(33,33,33)] w-[calc(100%+96px)] lg:w-full p-6 lg:p-8 rounded-sm border-b-8 -mx-12 px-12 lg:mx-0 lg:px-8"} style={`border-color:${color}`}>
             <div class="flex flex-col">
                 <div class="flex items-center space-x-6">
-                    <h2 class="text-xl font-semibold text-neutral-200">{title}</h2>
+                    <h2 class="text-lg lg:text-xl font-semibold text-neutral-200 whitespace-nowrap">{title}</h2>
                     {stars && <a class="flex items-center space-x-1 text-neutral-400 font-extrabold" href={starslink} target="_blank">
                         <img src={star} alt="Stars" class="h-4 w-4" width={16} height={16} />
                         <p>{stars}</p>
                     </a>}
                 </div>
                 <div class="h-[2px] w-12 bg-white/20 rounded-full my-5" />
-                <h4 class=" text-neutral-400">{role}</h4>
+                <h4 class=" text-neutral-400 text-sm lg:text-base lg:leading-4 whitespace-nowrap">{role}</h4>
             </div>
 
             <div>
                 <Link
                     href={`/software/${link}`}
-                    class="font-semibold px-4 py-3" style={`color:${color}`}            >
+                    class="font-semibold text-sm lg:text-base lg:leading-4 px-4 py-3 whitespace-nowrap" style={`color:${color}`}            >
                     learn more
                 </Link>
             </div>

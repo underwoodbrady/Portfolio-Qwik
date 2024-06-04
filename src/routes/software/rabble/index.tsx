@@ -11,12 +11,12 @@ export default component$(() => {
                 <Image />
             </div>
 
-            <p class="text-neutral-300 text-lg leading-6 mb-8">
+            <p class="text-neutral-300 text-base lg:text-lg leading-6 mb-8">
                 Rabble is a real-time messaging app modeled after Discord and Slack. It has a Sveltekit frontend using SSR (Server Side Rendering) and uses TailwindCSS + DaisyUI for styling.
                 User authentication and data is stored within a Pocketbase SQL-lite database and communicates with the backend through Node.js. It is currently live for testing <span class="underline">here</span> and is being hosted for free with Vercel.
             </p>
 
-            <p class="text-neutral-300 text-lg leading-6 mb-8">
+            <p class="text-neutral-300 text-base lg:text-lg leading-6 mb-8">
                 One of the key lessons from this project was managing client-side security. The code is written so the user never is able to see or iteract with server calls directly and any client information is passed to the database through a sveltekit middle layer.
                 This could eventually allow for server side data validation and rate limiting.
             </p>

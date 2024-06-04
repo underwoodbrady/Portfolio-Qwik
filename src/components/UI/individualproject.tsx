@@ -29,8 +29,8 @@ export default component$<Props>(({ title, tools, color, linkCode }) => {
         <section class="relative max-w-7xl mx-auto mt-12 h-full overflow-hidden">
             <div>
                 <div class="flex items-center justify-between mb-3">
-                    <h2 class=" text-4xl text-neutral-200 font-semibold ">{title}</h2>
-                    <div class="flex items-center space-x-6">
+                    <h2 class="text-3xl lg:text-4xl text-neutral-200 font-semibold ">{title}</h2>
+                    <div class="hidden lg:flex items-center space-x-6">
                         <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 stroke-[#8C8C8C] hover:stroke-neutral-500">
                             <g clip-path="url(#clip0_429_11072)">
                                 <path d="M11 3.99994H4V17.9999C4 19.1045 4.89543 19.9999 6 19.9999H18C19.1046 19.9999 20 19.1045 20 17.9999V12.9999" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />

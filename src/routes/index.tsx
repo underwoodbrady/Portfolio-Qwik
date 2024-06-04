@@ -12,13 +12,14 @@ export default component$(() => {
       <div class="absolute -bottom-2 w-[calc(100%+8rem)] -left-[4rem]">
         <MountainsBack />
       </div>
+      <div class="hidden lg:inline">
+
       <Canvas />
+      </div>
       <div class="absolute -bottom-2 w-[calc(100%+8rem)] -left-[4rem]">
         <MountainsFront />
       </div>
       <Hero />
-      {/* <ProjectList />
-      <ContactForm /> */}
     </>
   );
 });
