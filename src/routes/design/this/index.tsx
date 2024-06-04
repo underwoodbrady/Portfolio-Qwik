@@ -29,7 +29,7 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-  title: "Design - [subcat]",
+  title: "Design - This Website",
   meta: [
     {
       name: "this is a description",
