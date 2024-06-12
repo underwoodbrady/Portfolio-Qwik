@@ -17,7 +17,7 @@ export default component$<Props>(({ title, role, color, link, stars, starslink =
             <div class="flex flex-col">
                 <div class="flex items-center space-x-6">
                     <h2 class="text-lg lg:text-xl font-semibold text-neutral-200 whitespace-nowrap">{title}</h2>
-                    {stars && <a class="flex items-center space-x-1 text-neutral-400 font-extrabold" href={starslink} target="_blank">
+                    {stars && <a class="hidden lg:flex items-center space-x-1 text-neutral-400 font-extrabold" href={starslink} target="_blank">
                         <img src={star} alt="Stars" class="h-4 w-4" width={16} height={16} />
                         <p>{stars}</p>
                     </a>}
