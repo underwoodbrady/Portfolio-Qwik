@@ -22,7 +22,7 @@ export default component$(() => {
                     <Designproject title="Flutter Snowclock" link="snowclock"  colorRed={48} colorGreen={162} colorBlue={121}  />
                 </div>
                 <div class="col-span-2 row-start-5 row-end-[8]">
-                    <Designproject title="Tech Blog" link="techblog" colorRed={188} colorGreen={172} colorBlue={57} />
+                    <Designproject title="Envestnet Lydian" link="lydian" colorRed={188} colorGreen={172} colorBlue={57} />
                 </div>
                 <div class="col-start-1 col-end-4 row-start-[8] row-end-[10]">
                     <Designproject title="This Website" link="this" colorRed={196} colorGreen={117} colorBlue={38}/>

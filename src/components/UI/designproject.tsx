@@ -3,7 +3,7 @@ import { Link } from "@builder.io/qwik-city";
 import ImageWordle from '~/media/urbanwordle4.png?jsx';
 import ImageRed from '~/media/redtrade.png?jsx';
 import ImageSnow from '~/media/snowcounter.png?jsx';
-import ImageBlog from '~/media/blog2.png?jsx';
+import ImageBlog from '~/media/envestnet6.png?jsx';
 import ImageBrackets from '~/media/simplybrackets2.png?jsx';
 import ImageThis from '~/media/thiswebsite.png?jsx';
 
@@ -53,8 +53,8 @@ export default component$<Props>(({ title, colorRed, colorGreen, colorBlue, link
                 )
             }
             {
-                (title == 'Tech Blog' ?
-                    <div class=" max-w-[300px] mx-auto">
+                (title == 'Envestnet Lydian' ?
+                    <div class=" max-w-[280px] mx-auto">
                         <ImageBlog />
                     </div> : <></>
                 )
