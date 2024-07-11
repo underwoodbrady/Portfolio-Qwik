@@ -5,7 +5,7 @@ import Footer from "~/components/main/footer/footer";
 import Popinimage from "~/components/UI/popinimage";
 import Image1 from '~/media/envestnet1.png?jsx';
 import Image2 from '~/media/envestnet2.png?jsx';
-import Image3 from '~/media/red3.png?jsx';
+// import Image3 from '~/media/red3.png?jsx';
 
 export default component$(() => {
   return (
