@@ -34,7 +34,11 @@ export default component$(() => {
                 </p>
 
                 <p class="text-neutral-400 text-base lg:text-lg mb-6 ">
-                    I am hoping to secure a job at a software company and am always looking to continue building my skills as a programmer and as a designer.  For business inquiries feel free to <a>email</a> me.
+                    In my next job, I am seeking a role that offers a dynamic and challenging environment where I can leverage my skills in frontend development, particularly with React and Typescript, to create user-focused solutions.               
+                </p>
+
+                <p class="text-neutral-400 text-base lg:text-lg mb-6 ">
+                    I  am always looking to continue building my skills as a programmer and as a designer.  For business inquiries feel free to <a>email</a> me.
                 </p>
             </div>
 

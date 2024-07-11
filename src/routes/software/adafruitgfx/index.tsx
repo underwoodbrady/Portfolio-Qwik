@@ -17,7 +17,7 @@ export default component$(() => {
           It is available online for free or you can run on your own computer.
         </p>
         <p class="text-neutral-300 text-base lg:text-lg leading-6 mb-8">
-          It is created with Svelte and all the code for the data structures is written in typescript. It works using HTML canvas as a base and then creating a "virtual" canvas on top which stores all the shapes as objects. It thens maps that virtual canvas down to the HTML canvas to show to the user.
+          It is created with Svelte and all the code for the data structures is written in typescript. It works using an HTML canvas as a base and then creating a "virtual" canvas on top which stores all the shapes as objects. It thens maps that virtual canvas down to the HTML canvas to show to the user.
         </p>
       </Individualproject>
     </>
