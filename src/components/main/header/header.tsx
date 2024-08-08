@@ -49,7 +49,7 @@ export default component$(() => {
             </Link>
           </li>
         </ul>
-        <a download="BradyUnderwoodResume.pdf" href="/BradyUnderwood.pdf" class="hidden lg:flex cursor-pointer bg-white text-[rgb(24,24,24)] hover:bg-neutral-200 transition-colors duration-100  py-3 px-4 font-semibold rounded-sm">
+        <a download="BradyUnderwoodResume.pdf" href="/BradyUnderwoodResume-S.pdf" class="hidden lg:flex cursor-pointer bg-white text-[rgb(24,24,24)] hover:bg-neutral-200 transition-colors duration-100  py-3 px-4 font-semibold rounded-sm">
           <img src={Resume} alt="Resume Icon" width={16} height={16} class="mr-2" />
           download CV
         </a>
