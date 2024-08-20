@@ -10,7 +10,7 @@ import Footer from "~/components/main/footer/footer";
 export default component$(() => {
   return (
     <>
-        <Individualdesignproject title="This Website" subtitle="Performance and Simplicity" color="#C47526">
+        <Individualdesignproject title="Tango Social" subtitle="Performance and Simplicity" color="#C47526">
         {/* <Popinimage title="Step 1." subtitle="Define and Ideate" leftImg>
           <Image1 class="rounded-sm" />
         </Popinimage>

@@ -25,7 +25,7 @@ export default component$(() => {
                     <Designproject title="Envestnet Lydian" link="lydian" colorRed={188} colorGreen={172} colorBlue={57} />
                 </div>
                 <div class="col-start-1 col-end-4 row-start-[8] row-end-[10]">
-                    <Designproject title="This Website" link="this" colorRed={196} colorGreen={117} colorBlue={38}/>
+                    <Designproject title="Tango Social" link="tango" colorRed={196} colorGreen={117} colorBlue={38}/>
                 </div>
             </div>
         </section>

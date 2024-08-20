@@ -5,7 +5,7 @@ import ImageRed from '~/media/redtrade.png?jsx';
 import ImageSnow from '~/media/snowcounter.png?jsx';
 import ImageBlog from '~/media/envestnet6.png?jsx';
 import ImageBrackets from '~/media/simplybrackets2.png?jsx';
-import ImageThis from '~/media/thiswebsite.png?jsx';
+import ImageTango from '~/media/tango2.png?jsx';
 
 
 interface Props {
@@ -68,9 +68,9 @@ export default component$<Props>(({ title, colorRed, colorGreen, colorBlue, link
             }
 
             {
-                (title == 'This Website' ?
+                (title == 'Tango Social' ?
                     <div class=" max-w-[540px] mx-auto">
-                        <ImageThis />
+                        <ImageTango />
                     </div> : <></>
                 )
             }
