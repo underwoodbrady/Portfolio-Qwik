@@ -23,7 +23,7 @@ export default component$(() => {
         </Link>
       </div>
       <nav class="flex space-x-16 items-center">
-        <ul class={"absolute justify-around flex-col space-y-4 text-right top-12 right-0 lg:relative lg:space-y-0 lg:flex lg:flex-row lg:space-x-12 lg:text-left lg:top-0 " + (mobileMenuOpen.value ? " bg-[rgb(24,24,24)] pl-4" : "hidden")}>
+        <ul class={"absolute justify-around flex-col space-y-4 text-right top-12 right-0 lg:relative lg:space-y-0 lg:flex lg:flex-row lg:space-x-10 lg:text-left lg:top-0 " + (mobileMenuOpen.value ? " bg-[rgb(24,24,24)] pl-4" : "hidden")}>
           <li>
             <Link
               href="/software"

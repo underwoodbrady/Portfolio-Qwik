@@ -5,7 +5,7 @@ export default component$(() => {
         <section class="relative text-white max-w-7xl mx-auto flex h-[calc(100vh-72px)]">
             <div class="absolute w-full top-[40%] lg:w-5/12 lg:top-[35%] -translate-y-1/2">
                 <h2 class="mb-6 text-4xl lg:text-5xl lg:mb-8 font-semibold text-neutral-100">Hello,</h2>
-                <h3 class="text-lg mb-6 lg:text-xl lg:mb-8 text-neutral-200 max-w-xl">I am a full-stack software developer and web designer optimizing for <span>simplicity</span> and <span>performance</span></h3>
+                <h3 class="text-lg mb-6 lg:text-xl lg:mb-8 text-neutral-300 max-w-xl">I am a full-stack software developer and web designer optimizing for <span>simplicity</span> and <span>performance</span></h3>
                 <div class="w-28 h-[2px] bg-white/20 rounded-full mb-5"></div>
                 <div class="flex space-x-6 items-center">
                     <a href="https://github.com/underwoodbrady" target="_blank">

@@ -22,7 +22,7 @@ export default component$<Props>(({ title, role, color, link, stars, starslink =
                         <p>{stars}</p>
                     </a>}
                 </div>
-                <div class="h-[2px] w-12 bg-white/20 rounded-full my-5" />
+                <div class="h-[2px] w-12 bg-white/20 rounded-full my-4" />
                 <h4 class=" text-neutral-400 text-sm lg:text-base lg:leading-4 whitespace-nowrap">{role}</h4>
             </div>
 
