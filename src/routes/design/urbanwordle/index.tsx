@@ -10,7 +10,7 @@ import Footer from "~/components/main/footer/footer";
 export default component$(() => {
   return (
     <>
-      <Individualdesignproject title="Urban Wordle" subtitle="Taking Inspiration from Others" color="#88B769">
+      <Individualdesignproject title="Urban Wordle" subtitle="UI and Software Design" color="#88B769">
         {/* <Popinimage title="Step 1." subtitle="Define and Ideate" leftImg>
           <Image1 class="rounded-sm" />
         </Popinimage>
@@ -20,7 +20,7 @@ export default component$(() => {
         <Popinimage title="Step 3." subtitle="Refine and Test" leftImg>
           <Image3 class="rounded-sm" />
         </Popinimage> */}
-        <p class="text-neutral-500 font-semibold text-center h-[800px] py-24">This page is a work in progress</p>
+        <p class="text-neutral-500 font-semibold text-center h-[800px] py-24">Sorry! This page is currently being updated</p>
       </Individualdesignproject>
       <Footer />
     </>

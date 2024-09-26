@@ -5,21 +5,21 @@ import Footer from "~/components/main/footer/footer";
 import Popinimage from "~/components/UI/popinimage";
 import Image1 from '~/media/envestnet1.png?jsx';
 import Image2 from '~/media/envestnet2.png?jsx';
-// import Image3 from '~/media/red3.png?jsx';
+import Image3 from '~/media/envestnet7.png?jsx';
 
 export default component$(() => {
   return (
     <>
-      <Individualdesignproject title="Envestnet Lydian" subtitle="Mobile Financial Literacy" color="#BCAC39">
-        <Popinimage title="Low-fidelity Wireframes" subtitle="Used Figma to create low-fidelity wireframes representing the core user flow through the app" leftImg>
+      <Individualdesignproject title="Envestnet Lydian" subtitle="Lead Designer and Programmer" color="#BCAC39">
+        <Popinimage title="Low-fidelity Wireframes" subtitle="At Envestnet we had a vision to make financial education more accessible to unsupported groups through a mobile app. I used Figma to create low-fidelity wireframes representing the core user flow through the app." leftImg>
           <Image1 class="rounded-sm" />
         </Popinimage>
-        <Popinimage title="High-fidelity Mockup" subtitle="Created a higher fidelity mockup of the required pages in Figma and Illustrator" >
+        <Popinimage title="High-fidelity Mockup" subtitle="Inspired by Duolingo, I then created a higher fidelity mockups of the required pages in Figma and Illustrator." >
           <Image2 class="rounded-sm" />
         </Popinimage>
-        {/* <Popinimage title="Live Prototype" subtitle="Built a live prototype in React Native using navigation libraries and redux" leftImg>
+        <Popinimage title="Live Prototype" subtitle="After encouragement from upper management, I built a live prototype in React Native using Redux for state management." leftImg>
           <Image3 class="rounded-sm" />
-        </Popinimage> */}
+        </Popinimage>
       </Individualdesignproject>
       <Footer />
     </>

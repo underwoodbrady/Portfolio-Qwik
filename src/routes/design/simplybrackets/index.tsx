@@ -19,7 +19,7 @@ export default component$(() => {
 
   return (
     <>
-      <Individualdesignproject title="Simply Brackets" subtitle="Simplicity is Key" color="#29B2AF">
+      <Individualdesignproject title="Simply Brackets" subtitle="Visual Design, Brand Identity, UX" color="#29B2AF">
          <Popinimage title="Business Model Canvas" subtitle="As part of the UX Design Class at Montana State we studied the 5 stage design process which included making this business model canvas. " leftImg>
           <Image1 class="rounded-sm" />
         </Popinimage>

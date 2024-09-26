@@ -18,7 +18,7 @@ interface Props {
 
 export default component$<Props>(({ title, colorRed, colorGreen, colorBlue, link }) => {
     return (
-        <div class="relative flex items-center group justify-between bg-[rgb(33,33,33)] w-full h-full p-6 lg:p-8 rounded-sm border-4" style={`border-color:rgb(${colorRed},${colorGreen},${colorBlue})`}>
+        <div class="relative flex items-center group justify-between bg-[rgb(33,33,33)] hover:bg-[rgb(36,36,36)] w-full h-full p-6 lg:p-8 rounded-sm border-4" style={`border-color:rgb(${colorRed},${colorGreen},${colorBlue})`}>
             <div class="absolute left-0 top-0 w-full h-full opacity-0 group-hover:opacity-100 transition-opacity duration-100 -z-20" style={`box-shadow:0px 0px 25px 4px rgba(${colorRed},${colorGreen},${colorBlue},0.4)`}></div>
             <div class="flex flex-col items-start justify-between h-full min-w-[120px] lg:min-w-min min-h-[120px]">
                 <div class="flex flex-col">
